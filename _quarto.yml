@@ -5,7 +5,7 @@ website:
   title: "GIS_Project"
   navbar:
     left: 
-      - href: overview.qmd
+      - href: overview.html
         text: Overview
       - href: methodology.qmd
         text: Methodology

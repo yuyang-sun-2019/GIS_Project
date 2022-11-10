@@ -5,3 +5,7 @@ title: "GIS Project"
 This is a Quarto website.
 
 Welcome to our GIS website.
+
+Poster
+
+![](images/POSTER-01.jpg)

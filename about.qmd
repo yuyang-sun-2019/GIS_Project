@@ -1,9 +1,19 @@
 ---
-title: "About"
+title: "About Us"
 ---
 
-About this site
+About G2T11 ![](images/download%20(5).jpeg){width="46" height="41"}
 
-```{r}
-1 + 1
+We are a team of 3 girls, consisting of:
+
+![Avigale](images/avi.jpg){width="150"}
+
+![Jia Ying](images/jiaying-01.jpg)
+
+![JIa Ying](images/jiaying.jpg){width="162"}
+
+```{}
 ```
+
+{r}
+1 + 1

@@ -1,6 +1,6 @@
-## Overview
+## Objective
 
-In this project, we are given two major themes and sub-themes. Detail description of this project is available on this [page](https://smt201-ay2022-23t1.netlify.app/gisproject). Land cover classification is commonly used application area of digital image analysis.
+To investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team intends to conduct a comparison analysis of land cover classification between the two data sources in order to identify potential strengths and weaknesses of each data source in order to determine their relative efficacy.
 
 ## Poster
 
@@ -8,16 +8,6 @@ In this project, we are given two major themes and sub-themes. Detail descriptio
 
 ## Literature Review
 
-In this project, the following articles have will be reviewed.
+Our team has conducted several literatures reviews and found that out Sentinel-2A data has similar spectral bands and geometric accuracy to Landsat 8. (EROS, 2019) Readings also suggest that when the red-edge bands in both datasets are being compared, a combination of both Landsat-8 and Sentinel-2 red-edge bands resulted in a higher accuracy index than Landsat-8 alone. (Gerald Forkuor et al, 2018) Therefore, we wanted to use the comparison study as an opportunity to explore the data insights that both datasets could be used to uncover.
 
-## Objectives
-
-The objectives of this project are as follows:
-
--   objective 1
-
--   objective 2
-
-## Tasks
-
-The project tasks are as follows:
+## 

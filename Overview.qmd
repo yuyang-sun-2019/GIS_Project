@@ -4,7 +4,7 @@ In this project, we are given two major themes and sub-themes. Detail descriptio
 
 ## Poster
 
-![](images/POSTER.jpg)
+![](images/poster_updated.jpg)
 
 ## Literature Review
 

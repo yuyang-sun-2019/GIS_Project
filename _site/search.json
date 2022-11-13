@@ -2,14 +2,14 @@
   {
     "objectID": "Overview.html",
     "href": "Overview.html",
-    "title": "GIS_Project",
+    "title": "Al Norte",
     "section": "",
-    "text": "To investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team intends to conduct a comparison analysis of land cover classification between the two data sources in order to identify potential strengths and weaknesses of each data source in order to determine their relative efficacy."
+    "text": "Theme 1: Urban Application of Satellite Remote Sensing and GIS\nSub-theme 1: A comparison study of land cover classification by using Landsat 8 and Sentinel 2 data."
   },
   {
     "objectID": "Overview.html#literature-review",
     "href": "Overview.html#literature-review",
-    "title": "GIS_Project",
+    "title": "Al Norte",
     "section": "Literature Review",
     "text": "Literature Review\nOur team has conducted several literatures reviews and found that out Sentinel-2A data has similar spectral bands and geometric accuracy to Landsat 8. (EROS, 2019) Readings also suggest that when the red-edge bands in both datasets are being compared, a combination of both Landsat-8 and Sentinel-2 red-edge bands resulted in a higher accuracy index than Landsat-8 alone. (Gerald Forkuor et al, 2018) Therefore, we wanted to use the comparison study as an opportunity to explore the data insights that both datasets could be used to uncover."
   },
@@ -47,5 +47,61 @@
     "title": "GIS_Project",
     "section": "Poster",
     "text": "Poster"
+  },
+  {
+    "objectID": "poster.html#poster",
+    "href": "poster.html#poster",
+    "title": "Al Norte",
+    "section": "Poster",
+    "text": "Poster"
+  },
+  {
+    "objectID": "poster.html#literature-review",
+    "href": "poster.html#literature-review",
+    "title": "Al Norte",
+    "section": "Literature Review",
+    "text": "Literature Review\nOur team has conducted several literatures reviews and found that out Sentinel-2A data has similar spectral bands and geometric accuracy to Landsat 8. (EROS, 2019) Readings also suggest that when the red-edge bands in both datasets are being compared, a combination of both Landsat-8 and Sentinel-2 red-edge bands resulted in a higher accuracy index than Landsat-8 alone. (Gerald Forkuor et al, 2018) Therefore, we wanted to use the comparison study as an opportunity to explore the data insights that both datasets could be used to uncover."
+  },
+  {
+    "objectID": "proposal.html",
+    "href": "proposal.html",
+    "title": "Proposal",
+    "section": "",
+    "text": "Land cover classification is an important remote sensing application. Satellite optical and radar images are two of the most widely used remote sensing images with respective advantages and disadvantages.\nUsing both radar and optical images and machine learning, this project is to explore automatic land cover classification traditionally done manually or semi-manually."
+  },
+  {
+    "objectID": "proposal.html#project-objective",
+    "href": "proposal.html#project-objective",
+    "title": "Proposal",
+    "section": "Project Objective",
+    "text": "Project Objective\nThe objective of the project is to study, develop and compare different ensemble/non-ensemble machine learning algorithms for the and learn the pre-processing procedure and general flow of any land-cover classification based on the remote sensing data. By analyzing different classification results with various machine learning algorithms, we can get a deep understanding of discriminating machine learning problems."
+  },
+  {
+    "objectID": "proposal.html#data",
+    "href": "proposal.html#data",
+    "title": "Proposal",
+    "section": "Data",
+    "text": "Data\nThe study area is located at the north of Singapore. The north of Singapore holds a variety of landscape characteristics which is useful for classification.\n\nLandsat 8 (20180524) Imagery (Bands 1-7)\nSentinel-2 (20200126) Imagery (Bands 2,3,4,8)"
+  },
+  {
+    "objectID": "proposal.html#scope-of-work",
+    "href": "proposal.html#scope-of-work",
+    "title": "Proposal",
+    "section": "Scope of Work",
+    "text": "Scope of Work\n\nTask 1: Data Collection\nWe first gather the satellite imagery data from Sentinel-2 and Landsat-8 respectively. They are obtainable at <> <>\nIn order to perform the analysis accurately, we gather data that are within 5-10% cloud\n\n\nTask 2 : Study Area Selection"
+  },
+  {
+    "objectID": "proposal.html#project-schedule",
+    "href": "proposal.html#project-schedule",
+    "title": "Proposal",
+    "section": "Project Schedule",
+    "text": "Project Schedule\nThis is our overall Gantt Chart"
+  },
+  {
+    "objectID": "Overview.html#abstract",
+    "href": "Overview.html#abstract",
+    "title": "Al Norte",
+    "section": "Abstract",
+    "text": "Abstract\nThis project aims to\nTo investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team intends to conduct a comparison analysis of land cover classification between the two data sources in order to identify potential strengths and weaknesses of each data source in order to determine their relative efficacy."
   }
 ]

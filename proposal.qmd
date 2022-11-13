@@ -1,0 +1,36 @@
+---
+title: "Proposal"
+editor: visual
+---
+
+## Motivation of Project
+
+Land cover classification is an important remote sensing application. Satellite optical and radar images are two of the most widely used remote sensing images with respective advantages and disadvantages.
+
+Using both radar and optical images and machine learning, this project is to explore automatic land cover classification traditionally done manually or semi-manually.
+
+## Project Objective
+
+The objective of the project is to study, develop and compare different ensemble/non-ensemble machine learning algorithms for the and learn the pre-processing procedure and general flow of any land-cover classification based on the remote sensing data. By analyzing different classification results with various machine learning algorithms, we can get a deep understanding of discriminating machine learning problems.
+
+## Data
+
+The study area is located at the north of Singapore. The north of Singapore holds a variety of landscape characteristics which is useful for classification.
+
+1.  Landsat 8 (20180524) Imagery (Bands 1-7)
+
+2.  Sentinel-2 (20200126) Imagery (Bands 2,3,4,8)
+
+## Scope of Work
+
+### Task 1: Data Collection
+
+We first gather the satellite imagery data from Sentinel-2 and Landsat-8 respectively. They are obtainable at \<\> \<\>
+
+In order to perform the analysis accurately, we gather data that are within 5-10% cloud
+
+### Task 2 : Study Area Selection
+
+## Project Schedule
+
+This is our overall Gantt Chart

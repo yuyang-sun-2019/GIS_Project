@@ -1,15 +1,6 @@
-![](images/logo.jpg)
+## Poster
 
-
-Theme 1: Urban Application of Satellite Remote Sensing and GIS
-
-Sub-theme 1: A comparison study of land cover classification by using Landsat 8 and Sentinel 2 data.
-
-## Abstract
-
-This project aims to
-
-To investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team intends to conduct a comparison analysis of land cover classification between the two data sources in order to identify potential strengths and weaknesses of each data source in order to determine their relative efficacy.
+![](images/G2Team11.jpg)
 
 ## Literature Review
 

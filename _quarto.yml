@@ -2,23 +2,27 @@ project:
   type: website
 
 website:
-  title: "GIS_Project"
+  title: "Al Norte"
   navbar:
     left: 
       - href: overview.html
         text: Overview
-      - href: methodology.qmd
+      - href: poster.html
+        text: Poster
+      - href: proposal.html
+        text: Proposal
+      - href: methodology.html
         text: Methodology
-      - href: Analysis.qmd
+      - href: analysis.html
         text: Analysis
-      - href: findings.qmd
+      - href: findings.html
         text: Results & Discussion
 
     right:
       - href: index.qmd
         text: Home
-      - about.qmd
-
+      - href: about.qmd
+        text: About Us
 format:
   html:
     theme: cosmo

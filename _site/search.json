@@ -88,7 +88,7 @@
     "href": "proposal.html#scope-of-work",
     "title": "Proposal",
     "section": "Scope of Work",
-    "text": "Scope of Work\n\nTask 1: Data Collection\nWe first gather the satellite imagery data from Sentinel-2 and Landsat-8 respectively. They are obtainable at <> <>\nIn order to perform the analysis accurately, we gather data that are within 5-10% cloud\n\n\nTask 2 : Study Area Selection"
+    "text": "Scope of Work\n\nTask 1: Data Collection\nWe first gather the satellite imagery data from Sentinel-2 and Landsat-8 respectively. They are obtainable at <> <>\nIn order to perform the analysis accurately, we gather data that are within 5-15% cloud cover.\nLandsat 8\nType: Landsat 8-9 OLI/TIRS C2 L1\nHere are some of the potential data sets that we have chosen to work with. However, as we can see from the previews <> , there are some imagery that has massive cloud cover around Singapore. Hence we eliminate them.  Sentinel-2\nAfter obtaining Landsat 8 remote sensing data, we then proceed to narrow down our search for an appropriate scenes in Sentinel-2.\nWe observed that there majority of the scenes in 2018 was not useful to us due to the large cloud cover, hence we decided to look into 2019 and 2020 and selected 2020401 scene as our selection.\n\n\n\n\n\n\n\nTask 2 : Study Area Selection"
   },
   {
     "objectID": "proposal.html#project-schedule",
@@ -103,5 +103,12 @@
     "title": "Al Norte",
     "section": "Abstract",
     "text": "Abstract\nThis project aims to\nTo investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team intends to conduct a comparison analysis of land cover classification between the two data sources in order to identify potential strengths and weaknesses of each data source in order to determine their relative efficacy."
+  },
+  {
+    "objectID": "proposal.html#figures",
+    "href": "proposal.html#figures",
+    "title": "Proposal",
+    "section": "Figures",
+    "text": "Figures"
   }
 ]

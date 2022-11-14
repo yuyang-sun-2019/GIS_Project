@@ -1,4 +1,80 @@
 ---
-title: "methodology"
+title: "Methodology"
 editor: visual
 ---
+
+Here is an overview of our workflow for our accuracy assessment for both Landsat 8 and Sentinel-2
+
+![](images/overview_workflow.jpg){fig-align="center" width="484"}
+
+### Task 1: Selection of Study Area
+
+Our study area is in Singapore as being local, we can venture out around Singapore to find spots that are suitable for classification. Through Open Street Map and Google Maps, we found that the north of Singapore has a wide variety of classifications that we can make.
+
+![](images/studyarea.jpg){fig-align="center"}
+
+## Task 2: Data Collection
+
+We first gather the satellite imagery data from [Landsat 8](https://earthexplorer.usgs.gov/) and [Sentinel-2](https://scihub.copernicus.eu/dhus/#/home). The selection of both satellite imagery was influenced by the study area selection, the quality of image especially those with limited or low cloud cover. The data is geo-referenced to WGS_84 as it was the pre-defined CRS (Coordinate Reference System)
+
+#### Landsat 8
+
+![Figure 1 Potential Landsat Scenes](images/potential_landsat.jpg){fig-align="center" width="487"}
+
+Here are some of the potential data sets (Figure 1) that we have chosen to work with. However, as we can see from Figure 1.1 , there are some imagery that has massive cloud cover around Singapore. Hence we eliminate them and chose 20180524 data.
+
+![Figure 1.1 Landsat 8 samples](images/landsat_8%20previews.jpg){fig-align="center" width="534"}
+
+#### Sentinel-2
+
+After obtaining Landsat 8 remote sensing data, we then proceed to narrow down our search for an appropriate scenes in Sentinel-2.
+
+We observed that there majority of the scenes in 2018 was not useful to us due to the large cloud cover, hence we decided to look into 2019 and 2020 and selected 20200126 scene as our selection.
+
+![](images/sentinel_2_potential_scenes.jpg){fig-align="center"}
+
+## Task 3 : Image Pre-processing
+
+Under Landsat8, we decided to use bands 1-7 as the spatial resolution is same throughout (30m), whereas for Sentinel 2, we decided to use bands 2,3,4,8 as they have the same spatial resolution(10m)
+
+We then create band set as such to point to the respective wavelength based on the bands that we have.
+
+![](images/s2_bandset.jpg)
+
+Under Landsat8, we decided to use bands 1-7 as the spatial resolution is same throughout (30m), whereas for Sentinel 2, we decided to use bands 2,3,4,8 as they have the same spatial resolution(10m).
+
+From there we can then utilize the band sets to perform different combination of color-composites in order to help us see well (e.g vegetation, land, water bodies).
+
+![False Color Composite of Sentinel-2](images/s2_fcc.jpg)
+
+## Task 4 : Supervised Classification
+
+For this study, only supervised classification was performed. According to Guide to GIS and Image Processing,[^1] "the user develops the spectral signatures of known categories, such as urban and forest, and then the software assigns each pixel in the image to the cover type to which its signature is most comparable". We felt that supervised classification would be able to help us perform an controlled quantitative analyses of remote sensing image data.
+
+[^1]: Eastman, J.R. (2003) Guide to GIS and Image Processing 14, 239-247. Clark University Manual, USA.
+
+### Training Sites
+
+Here are our 9 classes that we have defined.
+
+![](images/classes.jpg){fig-align="center" width="481"}
+
+We first define the areas that will be used as training sites, using SCP, it will then create ROIs (Regions of Interest) and spectral signatures required for the classification of a band set.
+
+![](images/S2_test.jpg)
+
+### Spectural Signature Plot
+
+Spectural Signature includes several functions for displaying spectral signature values as a function of wavelength(defined in the band set). If common classifications are too near that they overlap, it will be hard differentiate the different classes(e.g managed vegetation, natural vegetation)
+
+![](images/landcomparision_s2.jpg)
+
+### Supervised Classification
+
+Through various tests, we compared both the maximum likehood and minimum distance and decided to use maximum likelihood as it yields more accuracy as compared to minimum distance.
+
+Based on the algorithm, each of the pixels will be assigned to the class that has the highest probability, which is the maximum likelihood.
+
+### Accuracy Assessment
+
+With the test samples classified, we will then created another set of train samples, to test the accuracy of the classification. More details can be viewed under [Analysis](http://localhost:6729/analysis.html).

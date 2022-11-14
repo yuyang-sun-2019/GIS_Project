@@ -39,7 +39,7 @@
     "href": "about.html",
     "title": "About Us",
     "section": "",
-    "text": "We are a team of 3 girls, consisting of:\n\n\n\nAvigale\n\n\n\n\n\nJia Ying\n\n\n\n\n\nJIa Ying\n\n\n\n{r} 1 + 1"
+    "text": "We are a team of 3 girls, consisting of:"
   },
   {
     "objectID": "Overview.html#poster",
@@ -88,7 +88,7 @@
     "href": "proposal.html#scope-of-work",
     "title": "Proposal",
     "section": "Scope of Work",
-    "text": "Scope of Work\n\nTask 1: Data Collection\nWe first gather the satellite imagery data from Sentinel-2 and Landsat-8 respectively. They are obtainable at <> <>\nIn order to perform the analysis accurately, we gather data that are within 5-15% cloud cover.\nLandsat 8\nType: Landsat 8-9 OLI/TIRS C2 L1\nHere are some of the potential data sets that we have chosen to work with. However, as we can see from the previews <> , there are some imagery that has massive cloud cover around Singapore. Hence we eliminate them.  Sentinel-2\nAfter obtaining Landsat 8 remote sensing data, we then proceed to narrow down our search for an appropriate scenes in Sentinel-2.\nWe observed that there majority of the scenes in 2018 was not useful to us due to the large cloud cover, hence we decided to look into 2019 and 2020 and selected 2020401 scene as our selection.\n\n\n\n\n\n\n\nTask 2 : Study Area Selection"
+    "text": "Scope of Work\n\nTask 1: Selection of Study Area\nWe decided on the north of Singapore as we felt that there was a wide variety of classification as compared to the\n\n\nTask 2 : Study Area Selection\nMore could be viewed under the Methodology page"
   },
   {
     "objectID": "proposal.html#project-schedule",
@@ -110,5 +110,82 @@
     "title": "Proposal",
     "section": "Figures",
     "text": "Figures"
+  },
+  {
+    "objectID": "methodology.html",
+    "href": "methodology.html",
+    "title": "Methodology",
+    "section": "",
+    "text": "Here is an overview of our workflow for our accuracy assessment for both Landsat 8 and Sentinel-2"
+  },
+  {
+    "objectID": "methodology.html#project-schedule",
+    "href": "methodology.html#project-schedule",
+    "title": "methodology",
+    "section": "Project Schedule",
+    "text": "Project Schedule\nThis is our overall Gantt Chart"
+  },
+  {
+    "objectID": "methodology.html#figures",
+    "href": "methodology.html#figures",
+    "title": "Methodology",
+    "section": "Figures",
+    "text": "Figures"
+  },
+  {
+    "objectID": "methodology.html#task-2-data-collection",
+    "href": "methodology.html#task-2-data-collection",
+    "title": "Methodology",
+    "section": "Task 2: Data Collection",
+    "text": "Task 2: Data Collection\nWe first gather the satellite imagery data from Landsat 8 and Sentinel-2. The selection of both satellite imagery was influenced by the study area selection, the quality of image especially those with limited or low cloud cover. The data is geo-referenced to WGS_84 as it was the pre-defined CRS (Coordinate Reference System)\n\nLandsat 8\n\n\n\nFigure 1 Potential Landsat Scenes\n\n\nHere are some of the potential data sets (Figure 1) that we have chosen to work with. However, as we can see from Figure 1.1 , there are some imagery that has massive cloud cover around Singapore. Hence we eliminate them and chose 20180524 data.\n\n\n\nFigure 1.1 Landsat 8 samples\n\n\n\n\nSentinel-2\nAfter obtaining Landsat 8 remote sensing data, we then proceed to narrow down our search for an appropriate scenes in Sentinel-2.\nWe observed that there majority of the scenes in 2018 was not useful to us due to the large cloud cover, hence we decided to look into 2019 and 2020 and selected 20200126 scene as our selection."
+  },
+  {
+    "objectID": "methodology.html#task-3-image-pre-processing",
+    "href": "methodology.html#task-3-image-pre-processing",
+    "title": "Methodology",
+    "section": "Task 3 : Image Pre-processing",
+    "text": "Task 3 : Image Pre-processing\nUnder Landsat8, we decided to use bands 1-7 as the spatial resolution is same throughout (30m), whereas for Sentinel 2, we decided to use bands 2,3,4,8 as they have the same spatial resolution(10m)\nWe then create band set as such to point to the respective wavelength based on the bands that we have.\n\nUnder Landsat8, we decided to use bands 1-7 as the spatial resolution is same throughout (30m), whereas for Sentinel 2, we decided to use bands 2,3,4,8 as they have the same spatial resolution(10m).\nFrom there we can then utilize the band sets to perform different combination of color-composites in order to help us see well (e.g vegetation, land, water bodies).\n\n\n\nFalse Color Composite of Sentinel-2"
+  },
+  {
+    "objectID": "methodology.html#task-4-supervised-classification",
+    "href": "methodology.html#task-4-supervised-classification",
+    "title": "Methodology",
+    "section": "Task 4 : Supervised Classification",
+    "text": "Task 4 : Supervised Classification\nFor this study, only supervised classification was performed. According to Guide to GIS and Image Processing,1 “the user develops the spectral signatures of known categories, such as urban and forest, and then the software assigns each pixel in the image to the cover type to which its signature is most comparable”. We felt that supervised classification would be able to help us perform an controlled quantitative analyses of remote sensing image data.\n\nTraining Sites\nHere are our 9 classes that we have defined.\n\n\n\n\n\nWe first define the areas that will be used as training sites, using SCP, it will then create ROIs (Regions of Interest) and spectral signatures required for the classification of a band set.\n\n\n\nSpectural Signature Plot\nSpectural Signature includes several functions for displaying spectral signature values as a function of wavelength(defined in the band set). If common classifications are too near that they overlap, it will be hard differentiate the different classes(e.g managed vegetation, natural vegetation)\n\n\n\nSupervised Classification\nThrough various tests, we compared both the maximum likehood and minimum distance and decided to use maximum likelihood as it yields more accuracy as compared to minimum distance.\nBased on the algorithm, each of the pixels will be assigned to the class that has the highest probability, which is the maximum likelihood.\n\n\nAccuracy Assessment\nWith the test samples classified, we will then created another set of train samples, to test the accuracy of the classification. More details can be viewed under Analysis."
+  },
+  {
+    "objectID": "findings.html",
+    "href": "findings.html",
+    "title": "Findings",
+    "section": "",
+    "text": "Maximum Likelihood classification on Sentinel-2\n\n\n\n\n\n\n\nMaximum Likelihood classification on Landsat 8"
+  },
+  {
+    "objectID": "findings.html#water-bodies",
+    "href": "findings.html#water-bodies",
+    "title": "Findings",
+    "section": "Water Bodies",
+    "text": "Water Bodies\nIn the case of water bodies, Landsat 8 performed better than Sentinel-2 as it managed to identify water bodies and Inland water."
+  },
+  {
+    "objectID": "findings.html#vegetation",
+    "href": "findings.html#vegetation",
+    "title": "Findings",
+    "section": "Vegetation",
+    "text": "Vegetation\nOther than the misclassification of managed vegetation for bare land in Sentinel-2, we could see that Sentinel-2 effectively identified between Natural vegetation and Managed vegetation as compared to Landsat 8. Landsat 8 was rather sparse in the classification of vegetation, especially near the Seletar bus depot."
+  },
+  {
+    "objectID": "findings.html#discussion-future-works",
+    "href": "findings.html#discussion-future-works",
+    "title": "Findings",
+    "section": "Discussion/ Future works",
+    "text": "Discussion/ Future works\nBoth satellite imagery has their own benefits, with Sentinel-2 being clearer due to its spatial resolution and higher accuracy in classification for vegetation. On the other hand, Landsat 8 though lacking in spatial resolution, it performed better in terms of water body classification. We hope that the results would be useful for future land cover classification and a recommendation from us would be to merge Landsat-8 and Sentinel-2 imagery together to improve the overall accuracy"
+  },
+  {
+    "objectID": "findings.html#overall",
+    "href": "findings.html#overall",
+    "title": "Findings",
+    "section": "Overall",
+    "text": "Overall\nResults showed that the overall accuracy was 43.69% for Sentinel-2 while it was 51.24% for Landsat 8. Similarly the Kappa Hat classification was calculated 0.3348 and 0.4216 for Sentinel-2 and Landsat 8 respectively."
   }
 ]

@@ -23,32 +23,16 @@ The study area is located at the north of Singapore. The north of Singapore hold
 
 ## Scope of Work
 
-### Task 1: Data Collection
+### Task 1: Selection of Study Area
 
-We first gather the satellite imagery data from Sentinel-2 and Landsat-8 respectively. They are obtainable at \<\> \<\>
-
-In order to perform the analysis accurately, we gather data that are within 5-15% cloud cover.
-
-Landsat 8
-
-Type: Landsat 8-9 OLI/TIRS C2 L1
-
-Here are some of the potential data sets that we have chosen to work with. However, as we can see from the previews \<\> , there are some imagery that has massive cloud cover around Singapore. Hence we eliminate them.
-![](images/potential_landsat.jpg){fig-align="center"}
-Sentinel-2 
-
-After obtaining Landsat 8 remote sensing data, we then proceed to narrow down our search for an appropriate scenes in Sentinel-2.
-
-We observed that there majority of the scenes in 2018 was not useful to us due to the large cloud cover, hence we decided to look into 2019 and 2020 and selected 2020401 scene as our selection. 
-
-![](images/sentinel_2_potential_scenes.jpg){fig-align="center"}
+We decided on the north of Singapore as we felt that there was a wide variety of classification as compared to the
 
 ### Task 2 : Study Area Selection
+
+More could be viewed under the [Methodology](https://gisproject-g2t11.netlify.app/methodology.html) page
 
 ## Project Schedule
 
 This is our overall Gantt Chart
 
-## Figures
 
-![](images/landsat_8%20previews.jpg){fig-align="center"}

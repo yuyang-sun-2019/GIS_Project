@@ -1,4 +1,26 @@
 ---
-title: "findings"
+title: "Findings"
 editor: visual
 ---
+
+::: {layout-ncol="2"}
+![Maximum Likelihood classification on Sentinel-2](images/ML_S2.jpg)
+
+![Maximum Likelihood classification on Landsat 8](images/L8_ML.jpg)
+:::
+
+## Overall
+
+Results showed that the overall accuracy was 43.69% for Sentinel-2 while it was 51.24% for Landsat 8. Similarly the Kappa Hat classification was calculated 0.3348 and 0.4216 for Sentinel-2 and Landsat 8 respectively.
+
+## Water Bodies
+
+In the case of water bodies, Landsat 8 performed better than Sentinel-2 as it managed to identify water bodies and Inland water.
+
+## Vegetation
+
+Other than the misclassification of managed vegetation for bare land in Sentinel-2, we could see that Sentinel-2 effectively identified between Natural vegetation and Managed vegetation as compared to Landsat 8. Landsat 8 was rather sparse in the classification of vegetation, especially near the Seletar bus depot.
+
+## Discussion/ Future works
+
+Both satellite imagery has their own benefits, with Sentinel-2 being clearer due to its spatial resolution and higher accuracy in classification for vegetation. On the other hand, Landsat 8 though lacking in spatial resolution, it performed better in terms of water body classification. We hope that the results would be useful for future land cover classification and a recommendation from us would be to merge Landsat-8 and Sentinel-2 imagery together to improve the overall accuracy

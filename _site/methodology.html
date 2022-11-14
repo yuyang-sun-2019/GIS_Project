@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GIS_Project - methodology</title>
+<title>Al Norte - Methodology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">GIS_Project</span>
+    <span class="navbar-title">Al Norte</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -116,14 +116,29 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#task-1-selection-of-study-area" id="toc-task-1-selection-of-study-area" class="nav-link active" data-scroll-target="#task-1-selection-of-study-area">Task 1: Selection of Study Area</a></li>
+  <li><a href="#task-2-data-collection" id="toc-task-2-data-collection" class="nav-link" data-scroll-target="#task-2-data-collection">Task 2: Data Collection</a></li>
+  <li><a href="#task-3-image-pre-processing" id="toc-task-3-image-pre-processing" class="nav-link" data-scroll-target="#task-3-image-pre-processing">Task 3 : Image Pre-processing</a></li>
+  <li><a href="#task-4-supervised-classification" id="toc-task-4-supervised-classification" class="nav-link" data-scroll-target="#task-4-supervised-classification">Task 4 : Supervised Classification</a>
+  <ul class="collapse">
+  <li><a href="#training-sites" id="toc-training-sites" class="nav-link" data-scroll-target="#training-sites">Training Sites</a></li>
+  <li><a href="#spectural-signature-plot" id="toc-spectural-signature-plot" class="nav-link" data-scroll-target="#spectural-signature-plot">Spectural Signature Plot</a></li>
+  <li><a href="#supervised-classification" id="toc-supervised-classification" class="nav-link" data-scroll-target="#supervised-classification">Supervised Classification</a></li>
+  <li><a href="#accuracy-assessment" id="toc-accuracy-assessment" class="nav-link" data-scroll-target="#accuracy-assessment">Accuracy Assessment</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">methodology</h1>
+<h1 class="title">Methodology</h1>
 </div>
 
 
@@ -137,10 +152,104 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>Here is an overview of our workflow for our accuracy assessment for both Landsat 8 and Sentinel-2</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/overview_workflow.jpg" class="img-fluid figure-img" width="484"></p>
+</figure>
+</div>
+<section id="task-1-selection-of-study-area" class="level3">
+<h3 class="anchored" data-anchor-id="task-1-selection-of-study-area">Task 1: Selection of Study Area</h3>
+<p>Our study area is in Singapore as being local, we can venture out around Singapore to find spots that are suitable for classification. Through Open Street Map and Google Maps, we found that the north of Singapore has a wide variety of classifications that we can make.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/studyarea.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="task-2-data-collection" class="level2">
+<h2 class="anchored" data-anchor-id="task-2-data-collection">Task 2: Data Collection</h2>
+<p>We first gather the satellite imagery data from <a href="https://earthexplorer.usgs.gov/">Landsat 8</a> and <a href="https://scihub.copernicus.eu/dhus/#/home">Sentinel-2</a>. The selection of both satellite imagery was influenced by the study area selection, the quality of image especially those with limited or low cloud cover. The data is geo-referenced to WGS_84 as it was the pre-defined CRS (Coordinate Reference System)</p>
+<section id="landsat-8" class="level4">
+<h4 class="anchored" data-anchor-id="landsat-8">Landsat 8</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/potential_landsat.jpg" class="img-fluid figure-img" width="487"></p>
+<p></p><figcaption class="figure-caption">Figure 1 Potential Landsat Scenes</figcaption><p></p>
+</figure>
+</div>
+<p>Here are some of the potential data sets (Figure 1) that we have chosen to work with. However, as we can see from Figure 1.1 , there are some imagery that has massive cloud cover around Singapore. Hence we eliminate them and chose 20180524 data.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/landsat_8%20previews.jpg" class="img-fluid figure-img" width="534"></p>
+<p></p><figcaption class="figure-caption">Figure 1.1 Landsat 8 samples</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="sentinel-2" class="level4">
+<h4 class="anchored" data-anchor-id="sentinel-2">Sentinel-2</h4>
+<p>After obtaining Landsat 8 remote sensing data, we then proceed to narrow down our search for an appropriate scenes in Sentinel-2.</p>
+<p>We observed that there majority of the scenes in 2018 was not useful to us due to the large cloud cover, hence we decided to look into 2019 and 2020 and selected 20200126 scene as our selection.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/sentinel_2_potential_scenes.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="task-3-image-pre-processing" class="level2">
+<h2 class="anchored" data-anchor-id="task-3-image-pre-processing">Task 3 : Image Pre-processing</h2>
+<p>Under Landsat8, we decided to use bands 1-7 as the spatial resolution is same throughout (30m), whereas for Sentinel 2, we decided to use bands 2,3,4,8 as they have the same spatial resolution(10m)</p>
+<p>We then create band set as such to point to the respective wavelength based on the bands that we have.</p>
+<p><img src="images/s2_bandset.jpg" class="img-fluid"></p>
+<p>Under Landsat8, we decided to use bands 1-7 as the spatial resolution is same throughout (30m), whereas for Sentinel 2, we decided to use bands 2,3,4,8 as they have the same spatial resolution(10m).</p>
+<p>From there we can then utilize the band sets to perform different combination of color-composites in order to help us see well (e.g vegetation, land, water bodies).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/s2_fcc.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">False Color Composite of Sentinel-2</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="task-4-supervised-classification" class="level2">
+<h2 class="anchored" data-anchor-id="task-4-supervised-classification">Task 4 : Supervised Classification</h2>
+<p>For this study, only supervised classification was performed. According to Guide to GIS and Image Processing,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> “the user develops the spectral signatures of known categories, such as urban and forest, and then the software assigns each pixel in the image to the cover type to which its signature is most comparable”. We felt that supervised classification would be able to help us perform an controlled quantitative analyses of remote sensing image data.</p>
+<section id="training-sites" class="level3">
+<h3 class="anchored" data-anchor-id="training-sites">Training Sites</h3>
+<p>Here are our 9 classes that we have defined.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/classes.jpg" class="img-fluid figure-img" width="481"></p>
+</figure>
+</div>
+<p>We first define the areas that will be used as training sites, using SCP, it will then create ROIs (Regions of Interest) and spectral signatures required for the classification of a band set.</p>
+<p><img src="images/S2_test.jpg" class="img-fluid"></p>
+</section>
+<section id="spectural-signature-plot" class="level3">
+<h3 class="anchored" data-anchor-id="spectural-signature-plot">Spectural Signature Plot</h3>
+<p>Spectural Signature includes several functions for displaying spectral signature values as a function of wavelength(defined in the band set). If common classifications are too near that they overlap, it will be hard differentiate the different classes(e.g managed vegetation, natural vegetation)</p>
+<p><img src="images/landcomparision_s2.jpg" class="img-fluid"></p>
+</section>
+<section id="supervised-classification" class="level3">
+<h3 class="anchored" data-anchor-id="supervised-classification">Supervised Classification</h3>
+<p>Through various tests, we compared both the maximum likehood and minimum distance and decided to use maximum likelihood as it yields more accuracy as compared to minimum distance.</p>
+<p>Based on the algorithm, each of the pixels will be assigned to the class that has the highest probability, which is the maximum likelihood.</p>
+</section>
+<section id="accuracy-assessment" class="level3">
+<h3 class="anchored" data-anchor-id="accuracy-assessment">Accuracy Assessment</h3>
+<p>With the test samples classified, we will then created another set of train samples, to test the accuracy of the classification. More details can be viewed under <a href="http://localhost:6729/analysis.html">Analysis</a>.</p>
 
 
+</section>
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Eastman, J.R. (2003) Guide to GIS and Image Processing 14, 239-247. Clark University Manual, USA.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

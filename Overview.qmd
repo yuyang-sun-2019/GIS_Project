@@ -6,8 +6,5 @@ Sub-theme 1: A comparison study of land cover classification by using Landsat 8 
 
 ## Abstract
 
-This project aims to
-
 To investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team intends to conduct a comparison analysis of land cover classification between the two data sources in order to identify potential strengths and weaknesses of each data source in order to determine their relative efficacy.
 
-## 

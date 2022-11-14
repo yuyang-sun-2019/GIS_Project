@@ -2,3 +2,26 @@
 title: "Analysis"
 editor: visual
 ---
+
+# Accuracy Assessment
+
+## Landsat 8
+
+### Pair-wise
+![](images/l8_pairwise.jpg)
+
+### Confusion Matrix
+![](images/l8_confusion matrix.jpg)
+
+### Kappa Hat/Overall
+![](images/l8_kappa.jpg)
+
+## Sentinel-2
+
+### Pair-wise
+![](images/s2_pairwise.jpg)
+### Confusion Matrix
+![](images/s2_confusionmatrix.jpg)
+
+### Kappa Hat/Overall
+![](images/s2_Kappa Matrix.jpg)

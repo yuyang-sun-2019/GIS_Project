@@ -71,7 +71,7 @@ Spectural Signature includes several functions for displaying spectral signature
 
 ### Supervised Classification
 
-Through various tests, we compared both the maximum likehood and minimum distance and decided to use maximum likelihood as it yields more accuracy as compared to minimum distance.
+Through various tests, we compared both the maximum likelihood and minimum distance and decided to use maximum likelihood as it yields more accuracy as compared to minimum distance.
 
 Based on the algorithm, each of the pixels will be assigned to the class that has the highest probability, which is the maximum likelihood.
 

@@ -24,3 +24,7 @@ Other than the misclassification of managed vegetation for bare land in Sentinel
 ## Discussion/ Future works
 
 Both satellite imagery has their own benefits, with Sentinel-2 being clearer due to its spatial resolution and higher accuracy in classification for vegetation. On the other hand, Landsat 8 though lacking in spatial resolution, it performed better in terms of water body classification. We hope that the results would be useful for future land cover classification and a recommendation from us would be to merge Landsat-8 and Sentinel-2 imagery together to improve the overall accuracy
+
+## Literature Review
+
+Our team has conducted several literatures reviews and found that out Sentinel-2A data has similar spectral bands and geometric accuracy to Landsat 8. (EROS, 2019) Readings also suggest that when the red-edge bands in both datasets are being compared, a combination of both Landsat-8 and Sentinel-2 red-edge bands resulted in a higher accuracy index than Landsat-8 alone. (Gerald Forkuor et al, 2018) Therefore, we wanted to use the comparison study as an opportunity to explore the data insights that both datasets could be used to uncover.

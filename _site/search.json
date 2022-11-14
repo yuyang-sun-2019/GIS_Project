@@ -32,7 +32,7 @@
     "href": "index.html",
     "title": "GIS Project",
     "section": "",
-    "text": "Welcome to our GIS website.\nPoster"
+    "text": "Theme 1: Urban Application of Satellite Remote Sensing and GIS\nSub-theme 1: A comparison study of land cover classification by using Landsat 8 and Sentinel 2 data."
   },
   {
     "objectID": "about.html",
@@ -102,7 +102,7 @@
     "href": "Overview.html#abstract",
     "title": "Al Norte",
     "section": "Abstract",
-    "text": "Abstract\nThis project aims to\nTo investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team intends to conduct a comparison analysis of land cover classification between the two data sources in order to identify potential strengths and weaknesses of each data source in order to determine their relative efficacy."
+    "text": "Abstract\nTo investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team intends to conduct a comparison analysis of land cover classification between the two data sources in order to identify potential strengths and weaknesses of each data source in order to determine their relative efficacy."
   },
   {
     "objectID": "proposal.html#figures",
@@ -151,7 +151,7 @@
     "href": "methodology.html#task-4-supervised-classification",
     "title": "Methodology",
     "section": "Task 4 : Supervised Classification",
-    "text": "Task 4 : Supervised Classification\nFor this study, only supervised classification was performed. According to Guide to GIS and Image Processing,1 “the user develops the spectral signatures of known categories, such as urban and forest, and then the software assigns each pixel in the image to the cover type to which its signature is most comparable”. We felt that supervised classification would be able to help us perform an controlled quantitative analyses of remote sensing image data.\n\nTraining Sites\nHere are our 9 classes that we have defined.\n\n\n\n\n\nWe first define the areas that will be used as training sites, using SCP, it will then create ROIs (Regions of Interest) and spectral signatures required for the classification of a band set.\n\n\n\nSpectural Signature Plot\nSpectural Signature includes several functions for displaying spectral signature values as a function of wavelength(defined in the band set). If common classifications are too near that they overlap, it will be hard differentiate the different classes(e.g managed vegetation, natural vegetation)\n\n\n\nSupervised Classification\nThrough various tests, we compared both the maximum likehood and minimum distance and decided to use maximum likelihood as it yields more accuracy as compared to minimum distance.\nBased on the algorithm, each of the pixels will be assigned to the class that has the highest probability, which is the maximum likelihood.\n\n\nAccuracy Assessment\nWith the test samples classified, we will then created another set of train samples, to test the accuracy of the classification. More details can be viewed under Analysis."
+    "text": "Task 4 : Supervised Classification\nFor this study, only supervised classification was performed. According to Guide to GIS and Image Processing,1 “the user develops the spectral signatures of known categories, such as urban and forest, and then the software assigns each pixel in the image to the cover type to which its signature is most comparable”. We felt that supervised classification would be able to help us perform an controlled quantitative analyses of remote sensing image data.\n\nTraining Sites\nHere are our 9 classes that we have defined.\n\n\n\n\n\nWe first define the areas that will be used as training sites, using SCP, it will then create ROIs (Regions of Interest) and spectral signatures required for the classification of a band set.\n\n\n\nSpectural Signature Plot\nSpectural Signature includes several functions for displaying spectral signature values as a function of wavelength(defined in the band set). If common classifications are too near that they overlap, it will be hard differentiate the different classes(e.g managed vegetation, natural vegetation)\n\n\n\nSupervised Classification\nThrough various tests, we compared both the maximum likelihood and minimum distance and decided to use maximum likelihood as it yields more accuracy as compared to minimum distance.\nBased on the algorithm, each of the pixels will be assigned to the class that has the highest probability, which is the maximum likelihood.\n\n\nAccuracy Assessment\nWith the test samples classified, we will then created another set of train samples, to test the accuracy of the classification. More details can be viewed under Analysis."
   },
   {
     "objectID": "findings.html",
@@ -187,5 +187,26 @@
     "title": "Findings",
     "section": "Overall",
     "text": "Overall\nResults showed that the overall accuracy was 43.69% for Sentinel-2 while it was 51.24% for Landsat 8. Similarly the Kappa Hat classification was calculated 0.3348 and 0.4216 for Sentinel-2 and Landsat 8 respectively."
+  },
+  {
+    "objectID": "findings.html#literature-review",
+    "href": "findings.html#literature-review",
+    "title": "Findings",
+    "section": "Literature Review",
+    "text": "Literature Review\nOur team has conducted several literatures reviews and found that out Sentinel-2A data has similar spectral bands and geometric accuracy to Landsat 8. (EROS, 2019) Readings also suggest that when the red-edge bands in both datasets are being compared, a combination of both Landsat-8 and Sentinel-2 red-edge bands resulted in a higher accuracy index than Landsat-8 alone. (Gerald Forkuor et al, 2018) Therefore, we wanted to use the comparison study as an opportunity to explore the data insights that both datasets could be used to uncover."
+  },
+  {
+    "objectID": "analysis.html",
+    "href": "analysis.html",
+    "title": "Analysis",
+    "section": "",
+    "text": "### Confusion Matrix"
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "GIS Project",
+    "section": "Abstract",
+    "text": "Abstract\nTo investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team intends to conduct a comparison analysis of land cover classification between the two data sources in order to identify potential strengths and weaknesses of each data source in order to determine their relative efficacy."
   }
 ]

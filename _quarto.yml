@@ -19,9 +19,9 @@ website:
         text: Results & Discussion
 
     right:
-      - href: index.qmd
+      - href: overview.html
         text: Home
-      - href: about.qmd
+      - href: about.html
         text: About Us
 format:
   html:

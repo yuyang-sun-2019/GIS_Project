@@ -77,4 +77,4 @@ Based on the algorithm, each of the pixels will be assigned to the class that ha
 
 ### Accuracy Assessment
 
-With the test samples classified, we will then created another set of train samples, to test the accuracy of the classification. More details can be viewed under [Analysis](http://localhost:6729/analysis.html).
+With the test samples classified, we will then created another set of train samples, to test the accuracy of the classification. More details can be viewed under [Analysis](https://gisproject-g2t11.netlify.app/analysis.html).

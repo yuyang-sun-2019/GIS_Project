@@ -33,6 +33,8 @@ More could be viewed under the [Methodology](https://gisproject-g2t11.netlify.ap
 
 ## Project Schedule
 
-This is our overall Gantt Chart
+This is our project Gannt Chart.
 
+[![](images/Gannt3-01.png)](https://smu-my.sharepoint.com/:x:/g/personal/jygoh_2019_scis_smu_edu_sg/EZ5HsDgba5lAlflwt2EjbA4Bni3XYU2dZPNwZYJNk7b0NQ?e=AgDQF1)
 
+?? whrs my image hahha

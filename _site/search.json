@@ -65,16 +65,16 @@
   {
     "objectID": "proposal.html",
     "href": "proposal.html",
-    "title": "Proposal",
+    "title": "Project Proposal",
     "section": "",
     "text": "Land cover classification is an important remote sensing application. Satellite optical and radar images are two of the most widely used remote sensing images with respective advantages and disadvantages.\nUsing both radar and optical images and machine learning, this project is to explore automatic land cover classification traditionally done manually or semi-manually."
   },
   {
     "objectID": "proposal.html#project-objective",
     "href": "proposal.html#project-objective",
-    "title": "Proposal",
-    "section": "Project Objective",
-    "text": "Project Objective\nThe objective of the project is to study, develop and compare different ensemble/non-ensemble machine learning algorithms for the and learn the pre-processing procedure and general flow of any land-cover classification based on the remote sensing data. By analyzing different classification results with various machine learning algorithms, we can get a deep understanding of discriminating machine learning problems."
+    "title": "Project Proposal",
+    "section": "2. Project Objective",
+    "text": "2. Project Objective\nThe objective of the project is to study, develop and compare different ensemble/non-ensemble machine learning algorithms for the and learn the pre-processing procedure and general flow of any land-cover classification based on the remote sensing data. By analyzing different classification results with various machine learning algorithms, we can get a deep understanding of discriminating machine learning problems."
   },
   {
     "objectID": "proposal.html#data",
@@ -86,16 +86,16 @@
   {
     "objectID": "proposal.html#scope-of-work",
     "href": "proposal.html#scope-of-work",
-    "title": "Proposal",
-    "section": "Scope of Work",
-    "text": "Scope of Work\n\nTask 1: Selection of Study Area\nWe decided on the north of Singapore as we felt that there was a wide variety of classification as compared to the\n\n\nTask 2 : Study Area Selection\nMore could be viewed under the Methodology page"
+    "title": "Project Proposal",
+    "section": "4. Scope of Work",
+    "text": "4. Scope of Work\n\nTask 1: Selection of Study Area\nAfter examining what was covered in class during Week 11, we decided on the north of Singapore as we felt that there was a wide variety of classification as compared to the other parts that we have explored and experimented.\nMore details on the decision making process could be viewed under 6. Miscellaneous.\n\n\nTask 2 : Data collection\n\nData extraction\nData Integration\nData cleaning\n\nMore details could be viewed under the Methodology page\n\n\nTask 3: Supervised Classifcation\n\nImage pre-processing\nIdentify potential classes within area of study\nSpectral signature plot\nComparison between max likelihood & min distancing\nAccuracy Assessment\n\nMore details could be viewed under the Methodology page\n\n\nTask 4: Report & Poster\n\nWrite on analysis of findings\nDesign of poster\nJurong Townhall presentation\n\nMore details could be viewed under the Poster & Report page\n\n\nTask 5: Website\n\nUpdating of poster & report"
   },
   {
     "objectID": "proposal.html#project-schedule",
     "href": "proposal.html#project-schedule",
-    "title": "Proposal",
-    "section": "Project Schedule",
-    "text": "Project Schedule\nThis is our project Gannt Chart.\n\n\n\n\n\n?? whrs my image hahha"
+    "title": "Project Proposal",
+    "section": "5. Project Schedule",
+    "text": "5. Project Schedule\nThis is our project Gannt Chart."
   },
   {
     "objectID": "Overview.html#abstract",
@@ -208,5 +208,19 @@
     "title": "GIS Project",
     "section": "Abstract",
     "text": "Abstract\nTo investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team intends to conduct a comparison analysis of land cover classification between the two data sources in order to identify potential strengths and weaknesses of each data source in order to determine their relative efficacy."
+  },
+  {
+    "objectID": "proposal.html#data-collected",
+    "href": "proposal.html#data-collected",
+    "title": "Project Proposal",
+    "section": "3. Data Collected",
+    "text": "3. Data Collected\nThe study area is located at the north of Singapore. The north of Singapore holds a variety of landscape characteristics which is useful for classification.\n\nLandsat 8 (20180524) Imagery (Bands 1-7)\nSentinel-2 (20200126) Imagery (Bands 2,3,4,8)"
+  },
+  {
+    "objectID": "proposal.html#miscellaneous",
+    "href": "proposal.html#miscellaneous",
+    "title": "Project Proposal",
+    "section": "6. Miscellaneous",
+    "text": "6. Miscellaneous\n\n6.0 Task allocation\n\n\n6.1 Meeting Minutes\nDate Commenced : Wednesday 12 October 2022\nAttendees : Ranullo Avigale, Goh Jia Ying, Sun Yuyang\nAgenda:\n\nDiscuss the individual novel research conducted for their sub-theme of interest.\nDiscuss and compare the various sub-theme to work on for this project.\nDecide on the name of the group, project title, motivation and potential area of study\nUpdate Gantt chart\nAllocate tasks for the data collection procedures\n\nNotes:\n\nThe meeting started with every member consolidating notes from the consultation with prof that ended earlier. A sample extract of our notes would look like:\n\n![](images/consult.png)\n\nThen every member sharing about the literature studies that they have conducted with regards to each sub-theme.\n\nAvigale: Shared about an article on Theme 2: Sub-theme 2 and the article was about the catchment area analysis of an urban railway station in Seoul. She explained how the analysis created help people to better understand the livability of residents within the area and how residents could potentially benefit from it.\nJia Ying: Shared about an article on Theme 2: Sub-theme 1 and the article was about why schools had to opt for mergers and what are the potential impacts. Relating back to what we have learnt in class, she quickly suggested that the merger and closure of schools may result in inequity of access for some students\nYuyang: Shared about an article on Theme 1 : Sub-theme 1 and felt that the topic would be relatively easier to do as the article had clear methodology on land classification studies.\n\nAfter intense discussion, we do agree with the fact that the opening of Thomson-line has limited data and literature studies that we can refer to and it might be more difficult to embark on that as compared the rest of the sub-themes.\nWe all agreed on focusing on Theme 1 : Sub-theme 1 and decided to save Theme 2: Sub-theme 1 as a back-up plan because we thought we had a better understanding of what to do with regards to the theme.\nThe team then took a bit of time to explore the relevant data and discuss on the area of study.\n\nAvigale felt that Philippines would be easier to do as there is large areas of forested land.\nYuyang thought Shanghai would be easier to do because there is a more rapid land usage change observed in the recent years.\nHowever, Jia Ying quickly pointed out we are doing land cover classification and not land use. Philippine is interesting to do but we might be unfamiliar with the area to judge the classes for classification.\n\ni continue later"
   }
 ]

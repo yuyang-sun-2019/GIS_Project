@@ -1,19 +1,19 @@
 ---
-title: "Proposal"
+title: "Project Proposal"
 editor: visual
 ---
 
-## Motivation of Project
+## 1. Motivation of Project
 
 Land cover classification is an important remote sensing application. Satellite optical and radar images are two of the most widely used remote sensing images with respective advantages and disadvantages.
 
 Using both radar and optical images and machine learning, this project is to explore automatic land cover classification traditionally done manually or semi-manually.
 
-## Project Objective
+## 2. Project Objective
 
 The objective of the project is to study, develop and compare different ensemble/non-ensemble machine learning algorithms for the and learn the pre-processing procedure and general flow of any land-cover classification based on the remote sensing data. By analyzing different classification results with various machine learning algorithms, we can get a deep understanding of discriminating machine learning problems.
 
-## Data
+## 3. Data Collected
 
 The study area is located at the north of Singapore. The north of Singapore holds a variety of landscape characteristics which is useful for classification.
 
@@ -21,20 +21,104 @@ The study area is located at the north of Singapore. The north of Singapore hold
 
 2.  Sentinel-2 (20200126) Imagery (Bands 2,3,4,8)
 
-## Scope of Work
+## 4. Scope of Work
 
-### Task 1: Selection of Study Area
+#### Task 1: Selection of Study Area
 
-We decided on the north of Singapore as we felt that there was a wide variety of classification as compared to the
+After examining what was covered in class during Week 11, we decided on the north of Singapore as we felt that there was a wide variety of classification as compared to the other parts that we have explored and experimented.
 
-### Task 2 : Study Area Selection
+More details on the decision making process could be viewed under [6. Miscellaneous].
 
-More could be viewed under the [Methodology](https://gisproject-g2t11.netlify.app/methodology.html) page
+#### Task 2 : Data collection
 
-## Project Schedule
+-   Data extraction
+
+-   Data Integration
+
+-   Data cleaning
+
+More details could be viewed under the [Methodology](https://gisproject-g2t11.netlify.app/methodology.html) page
+
+#### Task 3: Supervised Classifcation
+
+-   Image pre-processing
+
+-   Identify potential classes within area of study
+
+-   Spectral signature plot
+
+-   Comparison between max likelihood & min distancing
+
+-   Accuracy Assessment
+
+More details could be viewed under the [Methodology](https://gisproject-g2t11.netlify.app/methodology.html) page
+
+#### Task 4: Report & Poster 
+
+-   Write on analysis of findings
+
+-   Design of poster
+
+-   Jurong Townhall presentation
+
+More details could be viewed under the [Poster](https://gisproject-g2t11.netlify.app/poster.html) & [Report](https://gisproject-g2t11.netlify.app/findings.html) page
+
+#### Task 5: Website
+
+-   Updating of poster & report
+
+## 5. Project Schedule
 
 This is our project Gannt Chart.
 
 [![](images/Gannt3-01.png)](https://smu-my.sharepoint.com/:x:/g/personal/jygoh_2019_scis_smu_edu_sg/EZ5HsDgba5lAlflwt2EjbA4Bni3XYU2dZPNwZYJNk7b0NQ?e=AgDQF1)
 
-?? whrs my image hahha
+## 6. Miscellaneous
+
+### 6.0 Task allocation
+
+### 6.1 Meeting Minutes
+
+Date Commenced : Wednesday 12 October 2022
+
+Attendees : **Ranullo Avigale, Goh Jia Ying, Sun Yuyang**
+
+Agenda:
+
+-   Discuss the individual novel research conducted for their sub-theme of interest.
+
+-   Discuss and compare the various sub-theme to work on for this project.
+
+-   Decide on the name of the group, project title, motivation and potential area of study
+
+-   Update Gantt chart
+
+-   Allocate tasks for the data collection procedures
+
+Notes:
+
+1.   The meeting started with every member consolidating notes from the consultation with prof that ended earlier. A sample extract of our notes would look like:
+
+    ![](images/consult.png)
+
+2.  Then every member sharing about the literature studies that they have conducted with regards to each sub-theme.
+
+    -   **Avigale:** Shared about an article on Theme 2: Sub-theme 2 and the article was about the catchment area analysis of an urban railway station in Seoul. She explained how the analysis created help people to better understand the livability of residents within the area and how residents could potentially benefit from it.
+
+    -   **Jia Ying:** Shared about an article on Theme 2: Sub-theme 1 and the article was about why schools had to opt for mergers and what are the potential impacts. Relating back to what we have learnt in class, she quickly suggested that the merger and closure of schools may result in inequity of access for some students
+
+    -   **Yuyang**: Shared about an article on Theme 1 : Sub-theme 1 and felt that the topic would be relatively easier to do as the article had clear methodology on land classification studies.
+
+3.  After intense discussion, we do agree with the fact that the opening of Thomson-line has limited data and literature studies that we can refer to and it might be more difficult to embark on that as compared the rest of the sub-themes.
+
+4.  We all agreed on focusing on Theme 1 : Sub-theme 1 and decided to save Theme 2: Sub-theme 1 as a back-up plan because we thought we had a better understanding of what to do with regards to the theme.
+
+5.  The team then took a bit of time to explore the relevant data and discuss on the area of study.
+
+    -   Avigale felt that Philippines would be easier to do as there is large areas of forested land.
+
+    -   Yuyang thought Shanghai would be easier to do because there is a more rapid land usage change observed in the recent years.
+
+    -   However, Jia Ying quickly pointed out we are doing land cover classification and not land use. Philippine is interesting to do but we might be unfamiliar with the area to judge the classes for classification.
+
+6.  i continue later

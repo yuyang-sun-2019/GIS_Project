@@ -99,7 +99,7 @@ Notes:
 
 1.   The meeting started with every member consolidating notes from the consultation with prof that ended earlier. A sample extract of our notes would look like:
 
-    ![](images/consult.png)
+    ![](images/consult-01.png)
 
 2.  Then every member sharing about the literature studies that they have conducted with regards to each sub-theme.
 

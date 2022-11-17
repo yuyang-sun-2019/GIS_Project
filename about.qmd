@@ -2,12 +2,29 @@
 title: "About Us"
 ---
 
-About G2T11 ![](images/download%20(5).jpeg){width="46" height="41"}
+About G2T11 ❤️
 
 We are a team of 3 girls, consisting of:
 
 ![](images/team_photo.jpg)
 
+------------------------------------------------------------------------
 
++-----------------+---------------------------------------------------------------------------------------------------------+-----------------------------------+
+| Authors         | Afiliations                                                                                             | Email Address                     |
++=================+=========================================================================================================+===================================+
+| Ranullo Avigale | [School of Computer and Information Systems, Singapore Management University](https://scis.smu.edu.sg/) | \                                 |
+|                 |                                                                                                         | rabalisacan.2019\@scis.smu.edu.sg |
++-----------------+---------------------------------------------------------------------------------------------------------+-----------------------------------+
+| Goh Jia Yiing   | [School of Computer and Information Systems, Singapore Management University](https://scis.smu.edu.sg/) | \                                 |
+|                 |                                                                                                         | jygoh.2019\@scis.smu.edu.sg       |
++-----------------+---------------------------------------------------------------------------------------------------------+-----------------------------------+
+| Sun Yuyang      | [School of Computer and Information Systems, Singapore Management University](https://scis.smu.edu.sg/) | \                                 |
+|                 |                                                                                                         | yuyang.sun.2019\@scis.smu.edu.sg  |
++-----------------+---------------------------------------------------------------------------------------------------------+-----------------------------------+
 
+------------------------------------------------------------------------
 
+We would also like to take this opportunity to thank our [Associate Professor Dr. KAM Tin Seong](https://faculty.smu.edu.sg/profile/kam-tin-seong-486) for his continuous guidance and support through this project.
+
+Data Published : 17 Nov 2022

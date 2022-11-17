@@ -27,13 +27,13 @@ The study area is located at the north of Singapore. The north of Singapore hold
 
 After examining what was covered in class during Week 11, we decided on the north of Singapore as we felt that there was a wide variety of classification as compared to the other parts that we have explored and experimented.
 
-More details on the decision making process could be viewed under [6. Miscellaneous].
+More details on the decision making process could be viewed under [6.1 Meeting Minutes].
 
 #### Task 2 : Data collection
 
 -   Data extraction
 
--   Data Integration
+-   Data processing
 
 -   Data cleaning
 
@@ -77,13 +77,13 @@ This is our project Gannt Chart, more details on Task Allocation can be found in
 
 ### 6.0 Task allocation
 
-| Task                              | In-Charge                 |
-|-----------------------------------|---------------------------|
-| Task 1: Selection of study area   | Avigale, Jia Ying, Yuyang |
-| Task 2: Data Collection           | Jia Ying, Yuyang          |
-| Task 3: Supervised Classification | Avigale, Jia Ying, Yuyang |
-| Task 4: Poster Design             | Avigale, Jia Ying         |
-| Task 5: Website Maintanence       | Yuyang, Jia Ying          |
+| Task                              | In-Charge                  |
+|-----------------------------------|----------------------------|
+| Task 1: Selection of study area   | Avigale, Jia Yiing, Yuyang |
+| Task 2: Data Collection           | Jia Yiing, Yuyang          |
+| Task 3: Supervised Classification | Avigale, Jia Yiing, Yuyang |
+| Task 4: Poster Design             | Avigale, Jia Yiing         |
+| Task 5: Website Maintanence       | Yuyang, Jia Yiing          |
 
 ### 6.1 Meeting Minutes
 
@@ -111,7 +111,7 @@ Notes:
 
     -   **Avigale:** Shared about an article on Theme 2: Sub-theme 2 and the article was about the catchment area analysis of an urban railway station in Seoul. She explained how the analysis created help people to better understand the livability of residents within the area and how residents nearby could potentially benefit from it.
 
-    -   **Jia Ying:** Shared about an article on Theme 2: Sub-theme 1 and the article was about why schools had to opt for mergers and what are the potential impacts. Relating back to what we have learnt in class, she quickly suggested that the merger and closure of schools may result in inequity of access for some students
+    -   **Jia Yiing:** Shared about an article on Theme 2: Sub-theme 1 and the article was about why schools had to opt for mergers and what are the potential impacts. Relating back to what we have learnt in class, she quickly suggested that the merger and closure of schools may result in inequity of access for some students
 
     -   **Yuyang**: Shared about an article on Theme 1 : Sub-theme 1 and felt that the topic would be relatively easier to do as the article had clear methodology on land classification studies.
 
@@ -125,13 +125,13 @@ Notes:
 
     -   **Yuyang** thought Shanghai would be easier to do because there is a more rapid land usage change observed in the recent years.
 
-    -   However, **Jia Ying** quickly pointed out we are doing land cover classification and not land use. Philippine is interesting to do but we might be unfamiliar with the area to judge the classes for classification.
+    -   However, **Jia Yiing** quickly pointed out we are doing land cover classification and not land use. Philippine is interesting to do but we might be unfamiliar with the area to judge the classes for classification.
 
 6.  We then quickly come to a consensus that maybe we should explore Singapore instead since we are more familiar with the area.
 
     -   **Yuyang** felt that she was more interested to do the west side of Singapore since she is staying nearer to the West.
 
-    -   **Jia Ying** pointed that maybe we can explore the data images and look out for the possible areas to explore and we should avoid areas covered by clouds like West.
+    -   **Jia Yiing** pointed that maybe we can explore the data images and look out for the possible areas to explore and we should avoid areas covered by clouds like West.
 
     -   **Avigale** suggested that we can look at the north part of Singapore since there are more potential classes to explore.
 

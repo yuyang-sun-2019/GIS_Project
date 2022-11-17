@@ -2,11 +2,9 @@
 
 ## Summary of report
 
-To investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team conducted **a comparison analysis of land cover classification between the two data sources**.
+To investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team conducted **a comparison analysis of land cover classification between the two data sources**. The objective of the project is to study, develop and compare different ensemble/non-ensemble machine learning algorithms for the and learn the pre-processing procedure and general flow of any land-cover classification based on the remote sensing data. By analyzing different classification results with various machine learning algorithms, we can get a deep understanding of discriminating machine learning problems.
 
-In this study, we have chosen North of Singapore as our area of focus due to its wide variety of classification classes.
-
-The following satellite imagery and bands were selected for [analysis](https://gisproject-g2t11.netlify.app/methodology.html).
+In this study, we have chosen North of Singapore as our area of focus due to its wide variety of classification classes. The following satellite imagery and bands were selected for [analysis](https://gisproject-g2t11.netlify.app/methodology.html).
 
 | Landsat 8                                   | Sentinel-2                                           |
 |---------------------------------------------|------------------------------------------------------|
@@ -51,4 +49,4 @@ We then used SCP to define the ROIs (Regions of Interest) and spectral signature
 Both satellite imagery has their own benefits and shortcomings. We hope that the results would be useful for future land cover classification and in our future works, we aim to merge Landsat-8 and Sentinel-2 imagery to improve the overall accuracy.
 
 \
-Word Count: 284
+Word Count: 334

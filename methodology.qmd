@@ -7,74 +7,72 @@ Here is an overview of our workflow for our accuracy assessment for both Landsat
 
 ![](images/overview_workflow.jpg){fig-align="center" width="484"}
 
-### Task 1: Selection of Study Area
+## Task 1: Selection of Study Area
 
-Our study area is in Singapore as being local, we can venture out around Singapore to find spots that are suitable for classification. Through Open Street Map and Google Maps, we found that the north of Singapore has a wide variety of classifications that we can make.
+We chose Singapore as our primary area of study as our team felt more familiar with the identification of land covers in our local country. We ventured around Singapore to find areas suitable for land classification. Through Open Street Map and Google Maps, we compared between different parts of Singapore and found that the North of Singapore has an abundance of green covers and water bodies that can be further classified. With that, we decided to focus on **North of Singapore** due to its wide variety of land classifications.
 
 ![](images/studyarea.jpg){fig-align="center"}
 
 ## Task 2: Data Collection
 
-We first gather the satellite imagery data from [Landsat 8](https://earthexplorer.usgs.gov/) and [Sentinel-2](https://scihub.copernicus.eu/dhus/#/home). The selection of both satellite imagery was influenced by the study area selection, the quality of image especially those with limited or low cloud cover. The data is geo-referenced to WGS_84 as it was the pre-defined CRS (Coordinate Reference System)
+We first gather the satellite imagery data from [Landsat 8](https://earthexplorer.usgs.gov/) from Geo-explore and [Sentinel-2](https://scihub.copernicus.eu/dhus/#/home) from Copernicus Open Access Hub. The selection of both satellite imagery was influenced by the study area selection, and we looked out for higher quality image with limited or low cloud cover. All data sets are Geo-referenced to WGS_84 as it was the pre-defined CRS (Coordinate Reference System) for them.
 
 #### Landsat 8
 
-![Figure 1 Potential Landsat Scenes](images/potential_landsat.jpg){fig-align="center" width="487"}
+![`Figure 1 Potential Landsat Scenes`](images/potential_landsat.jpg){fig-align="center" width="487"}
 
 Here are some of the potential data sets (Figure 1) that we have chosen to work with. However, as we can see from Figure 1.1 , there are some imagery that has massive cloud cover around Singapore. Hence we eliminate them and chose 20180524 data.
 
-![Figure 1.1 Landsat 8 samples](images/landsat_8%20previews.jpg){fig-align="center" width="534"}
+![`Figure 1.1 Landsat 8 samples`](images/landsat_8%20previews.jpg){fig-align="center" width="534"}
 
 #### Sentinel-2
 
 After obtaining Landsat 8 remote sensing data, we then proceed to narrow down our search for an appropriate scenes in Sentinel-2.
 
-We observed that there majority of the scenes in 2018 was not useful to us due to the large cloud cover, hence we decided to look into 2019 and 2020 and selected 20200126 scene as our selection.
+We observed that there majority of the scenes in 2018 were not useful due to the large cloud cover,which may obstruct our view during analysis. Hence we decided to look into 2019 and 2020 and selected the 20200126 scene to conduct further analysis.
 
-![](images/sentinel_2_potential_scenes.jpg){fig-align="center"}
+![`Figure 1.2 : Collection of Sentinel-2 Imagery Samples`](images/sentinel_2_potential_scenes.jpg){fig-align="center"}
 
 ## Task 3 : Image Pre-processing
 
-Under Landsat8, we decided to use bands 1-7 as the spatial resolution is same throughout (30m), whereas for Sentinel 2, we decided to use bands 2,3,4,8 as they have the same spatial resolution(10m)
+Under Landsat8, we decided to use bands 1-7 as they have the same spatial resolution of 30m. Similarly, we decided to use bands 2,3,4,8 for Sentinel 2, as they have the same spatial resolution of 10m.
 
 We then create band set as such to point to the respective wavelength based on the bands that we have.
 
-![](images/s2_bandset.jpg)
+![`Figure 2.0: Example band sets`](images/s2_bandset.jpg){fig-align="center"}
 
-Under Landsat8, we decided to use bands 1-7 as the spatial resolution is same throughout (30m), whereas for Sentinel 2, we decided to use bands 2,3,4,8 as they have the same spatial resolution(10m).
+From there, we then utilized the band sets to experiment with different combination of color-composites to help us have a better view and better identification of the individual land classification (e.g vegetation, land, water bodies).
 
-From there we can then utilize the band sets to perform different combination of color-composites in order to help us see well (e.g vegetation, land, water bodies).
-
-![False Color Composite of Sentinel-2](images/s2_fcc.jpg)
+![`Figure 2.1 : False Color Composite of Sentinel-2`](images/s2_fcc.jpg){fig-align="center"}
 
 ## Task 4 : Supervised Classification
 
-For this study, only supervised classification was performed. According to Guide to GIS and Image Processing,[^1] "the user develops the spectral signatures of known categories, such as urban and forest, and then the software assigns each pixel in the image to the cover type to which its signature is most comparable". We felt that supervised classification would be able to help us perform an controlled quantitative analyses of remote sensing image data.
+In this study, our team only performed supervised classification. According to Guide to GIS and Image Processing,[^1] "the user develops the spectral signatures of known categories, such as urban and forest, and then the software assigns each pixel in the image to the cover type to which its signature is most comparable". We felt that supervised classification would be able to help us perform an controlled quantitative analyses of remote sensing image data.
 
 [^1]: Eastman, J.R. (2003) Guide to GIS and Image Processing 14, 239-247. Clark University Manual, USA.
 
-### Training Sites
+#### Training Sites
 
 Here are our 9 classes that we have defined.
 
-![](images/classes.jpg){fig-align="center" width="481"}
+![`Figure 3.0: Land Classification Classes`](images/classes.jpg){fig-align="center" width="481"}
 
-We first define the areas that will be used as training sites, using SCP, it will then create ROIs (Regions of Interest) and spectral signatures required for the classification of a band set.
+Using the SCP Plugin, we defined the areas that will be used as training sites to create the ROIs (Regions of Interest) and spectral signatures required for the classification of a band set.
 
-![](images/S2_test.jpg)
+![`Figure 3.1: Example of sites identified`](images/S2_test.jpg){fig-align="center"}
 
-### Spectural Signature Plot
+#### Spectural Signature Plot
 
-Spectural Signature includes several functions for displaying spectral signature values as a function of wavelength(defined in the band set). If common classifications are too near that they overlap, it will be hard differentiate the different classes(e.g managed vegetation, natural vegetation)
+Spectural Signature includes several functions for displaying spectral signature values as a function of wavelength(defined in the band set). If common classifications are too near to the extent that they overlap, it will be hard differentiate the different classes(e.g managed vegetation, natural vegetation)
 
-![](images/landcomparision_s2.jpg)
+![`Figure 4.0: Example of Spectural Plot`](images/landcomparision_s2.jpg){fig-align="center"}
 
-### Supervised Classification
+#### Supervised Classification
 
-Through various tests, we compared both the maximum likelihood and minimum distance and decided to use maximum likelihood as it yields more accuracy as compared to minimum distance.
+Through various experiments and testing, we compared both the maximum likelihood and minimum distance analysis and decided to use maximum likelihood as it yielded higher accuracy as compared to minimum distance.
 
 Based on the algorithm, each of the pixels will be assigned to the class that has the highest probability, which is the maximum likelihood.
 
-### Accuracy Assessment
+#### Accuracy Assessment
 
 With the test samples classified, we will then created another set of train samples, to test the accuracy of the classification. More details can be viewed under [Analysis](https://gisproject-g2t11.netlify.app/analysis.html).

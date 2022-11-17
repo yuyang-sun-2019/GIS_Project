@@ -33,7 +33,7 @@ Through utilizing the band sets identified to perform different combinations of 
 
 9.  Impervious surfaces
 
-We then used SCP to define the ROIs (Regions of Interest) and spectral signatures required for the classification of a band set. Through a series of comparisons, we found out maximum likelihood analysis would allow us to yield higher accuracy than minimum distance analysis.
+We then used SCP to define areas that would used as training sites and generated the ROIs (Regions of Interest) and spectral signatures required for the classification of a band set. Through a series of comparisons, we found out maximum likelihood analysis would allow us to yield higher accuracy than minimum distance analysis.
 
 [Results](https://gisproject-g2t11.netlify.app/findings.html) discussed in the following table.
 
@@ -49,4 +49,4 @@ We then used SCP to define the ROIs (Regions of Interest) and spectral signature
 Both satellite imagery has their own benefits and shortcomings. We hope that the results would be useful for future land cover classification and in our future works, we aim to merge Landsat-8 and Sentinel-2 imagery to improve the overall accuracy.
 
 \
-Word Count: 298
+Word Count: 306

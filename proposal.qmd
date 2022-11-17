@@ -59,7 +59,7 @@ More details could be viewed under the [Methodology](https://gisproject-g2t11.ne
 
 -   Design of poster
 
--   Jurong Townhall presentation
+-   Townhall presentation
 
 More details could be viewed under the [Poster](https://gisproject-g2t11.netlify.app/poster.html) & [Report](https://gisproject-g2t11.netlify.app/findings.html) page
 
@@ -69,7 +69,7 @@ More details could be viewed under the [Poster](https://gisproject-g2t11.netlify
 
 ## 5. Project Schedule
 
-This is our project Gannt Chart, more details can be found in [6.0 Task allocation].
+This is our project Gannt Chart, more details on Task Allocation can be found in [6.0 Task allocation].
 
 [![](images/gant_4.png)](https://smu-my.sharepoint.com/:x:/g/personal/jygoh_2019_scis_smu_edu_sg/EZ5HsDgba5lAlflwt2EjbA4Bni3XYU2dZPNwZYJNk7b0NQ?e=GZPEkn)
 

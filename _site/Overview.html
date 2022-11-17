@@ -130,7 +130,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><img src="images/logo.jpg" class="img-fluid"></p>
-<hr>
 <section id="summary-of-report" class="level2">
 <h2 class="anchored" data-anchor-id="summary-of-report">Summary of report</h2>
 <p>To investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team conducted <strong>a comparison analysis of land cover classification between the two data sources</strong>.</p>
@@ -145,12 +144,20 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>20180524</td>
-<td>20200126</td>
+<td><a href="https://earthexplorer.usgs.gov/">20180524</a></td>
+<td><a href="https://scihub.copernicus.eu/dhus/#/home">20200126</a></td>
 </tr>
 <tr class="even">
 <td>Bands 1 - 7 (30m resolution)</td>
 <td>Bands 2,3,4,8 (10m resolution)</td>
+</tr>
+<tr class="odd">
+<td>Low Cloud Cover Observed</td>
+<td>Low Cloud Cover Observed</td>
+</tr>
+<tr class="even">
+<td>CRS WGS_84</td>
+<td>CRS WGS_84</td>
 </tr>
 </tbody>
 </table>
@@ -166,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Built-up 3(Low density)</p></li>
 <li><p>Impervious surfaces</p></li>
 </ol>
-<p>We then used SCP to define the ROIs (Regions of Interest) and spectral signatures required for the classification of a band set. Through a series of comparisons, we found out maximum likelihood analysis would allow us to yield higher accuracy.</p>
+<p>We then used SCP to define the ROIs (Regions of Interest) and spectral signatures required for the classification of a band set. Through a series of comparisons, we found out maximum likelihood analysis would allow us to yield higher accuracy than minimum distance analysis.</p>
 <p>Results discussed in the following table.</p>
 <table class="table">
 <colgroup>
@@ -216,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>Both satellite imagery has their own benefits and shortcomings. We hope that the results would be useful for future land cover classification and in our future works, we aim to merge Landsat-8 and Sentinel-2 imagery to improve the overall accuracy.</p>
 <p><br>
-Word Count: 269</p>
+Word Count: 284</p>
 
 
 </section>

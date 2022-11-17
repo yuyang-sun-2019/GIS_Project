@@ -1,7 +1,5 @@
 ![](images/logo.jpg)
 
-------------------------------------------------------------------------
-
 ## Summary of report
 
 To investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team conducted **a comparison analysis of land cover classification between the two data sources**.
@@ -10,10 +8,12 @@ In this study, we have chosen North of Singapore as our area of focus due to its
 
 The following satellite imagery and bands were selected for analysis.
 
-| Landsat 8                    | Sentinel-2                     |
-|------------------------------|--------------------------------|
-| 20180524                     | 20200126                       |
-| Bands 1 - 7 (30m resolution) | Bands 2,3,4,8 (10m resolution) |
+| Landsat 8                                   | Sentinel-2                                           |
+|---------------------------------------------|------------------------------------------------------|
+| [20180524](https://earthexplorer.usgs.gov/) | [20200126](https://scihub.copernicus.eu/dhus/#/home) |
+| Bands 1 - 7 (30m resolution)                | Bands 2,3,4,8 (10m resolution)                       |
+| Low Cloud Cover Observed                    | Low Cloud Cover Observed                             |
+| CRS WGS_84                                  | CRS WGS_84                                           |
 
 Through utilizing the band sets identified to perform different combinations of color-composite, we have defined the following 9 classes to use as our training sites.
 
@@ -35,7 +35,7 @@ Through utilizing the band sets identified to perform different combinations of 
 
 9.  Impervious surfaces
 
-We then used SCP to define the ROIs (Regions of Interest) and spectral signatures required for the classification of a band set. Through a series of comparisons, we found out maximum likelihood analysis would allow us to yield higher accuracy.
+We then used SCP to define the ROIs (Regions of Interest) and spectral signatures required for the classification of a band set. Through a series of comparisons, we found out maximum likelihood analysis would allow us to yield higher accuracy than minimum distance analysis.
 
 Results discussed in the following table.
 
@@ -51,4 +51,4 @@ Results discussed in the following table.
 Both satellite imagery has their own benefits and shortcomings. We hope that the results would be useful for future land cover classification and in our future works, we aim to merge Landsat-8 and Sentinel-2 imagery to improve the overall accuracy.
 
 \
-Word Count: 269
+Word Count: 284

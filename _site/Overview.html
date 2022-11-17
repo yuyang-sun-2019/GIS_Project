@@ -120,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#summary-of-report" id="toc-summary-of-report" class="nav-link active" data-scroll-target="#summary-of-report">Summary of report</a></li>
   </ul>
 </nav>
     </div>
@@ -130,11 +130,93 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><img src="images/logo.jpg" class="img-fluid"></p>
-<p>Theme 1: Urban Application of Satellite Remote Sensing and GIS</p>
-<p>Sub-theme 1: A comparison study of land cover classification by using Landsat 8 and Sentinel 2 data.</p>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>To investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team intends to conduct a comparison analysis of land cover classification between the two data sources in order to identify potential strengths and weaknesses of each data source in order to determine their relative efficacy.</p>
+<hr>
+<section id="summary-of-report" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-report">Summary of report</h2>
+<p>To investigate the efficiency of Sentinel-2 data and Landsat-8 data in uncovering data insights, our team conducted <strong>a comparison analysis of land cover classification between the two data sources</strong>.</p>
+<p>In this study, we have chosen North of Singapore as our area of focus due to its wide variety of classification classes.</p>
+<p>The following satellite imagery and bands were selected for analysis.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Landsat 8</th>
+<th>Sentinel-2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>20180524</td>
+<td>20200126</td>
+</tr>
+<tr class="even">
+<td>Bands 1 - 7 (30m resolution)</td>
+<td>Bands 2,3,4,8 (10m resolution)</td>
+</tr>
+</tbody>
+</table>
+<p>Through utilizing the band sets identified to perform different combinations of color-composite, we have defined the following 9 classes to use as our training sites.</p>
+<ol type="1">
+<li><p>Water Body</p></li>
+<li><p>Inland water</p></li>
+<li><p>Bare Land</p></li>
+<li><p>Natural Vegetation</p></li>
+<li><p>Managed Vegetation</p></li>
+<li><p>Built-up 1 (High density)</p></li>
+<li><p>Built-up 2 (High density)</p></li>
+<li><p>Built-up 3(Low density)</p></li>
+<li><p>Impervious surfaces</p></li>
+</ol>
+<p>We then used SCP to define the ROIs (Regions of Interest) and spectral signatures required for the classification of a band set. Through a series of comparisons, we found out maximum likelihood analysis would allow us to yield higher accuracy.</p>
+<p>Results discussed in the following table.</p>
+<table class="table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 35%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Landsat 8</th>
+<th>Sentinel-2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Overall Accuracy</td>
+<td><strong>51.24%</strong></td>
+<td>43.69%</td>
+</tr>
+<tr class="even">
+<td>Kappa Hat Classification</td>
+<td>0.3348</td>
+<td><strong>0.4216</strong></td>
+</tr>
+<tr class="odd">
+<td>Water Bodies</td>
+<td><strong>Identified water bodies from inland land</strong></td>
+<td>Identify only inland water</td>
+</tr>
+<tr class="even">
+<td>Vegetation</td>
+<td>Identify only managed vegetation</td>
+<td>I<strong>dentified natural vegetation from managed vegetation</strong></td>
+</tr>
+<tr class="odd">
+<td>Bare Land</td>
+<td><strong>Accurate</strong></td>
+<td>Misclassification</td>
+</tr>
+<tr class="even">
+<td>Spatial Resolution</td>
+<td>Lower</td>
+<td><strong>Higher - clearer images</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Both satellite imagery has their own benefits and shortcomings. We hope that the results would be useful for future land cover classification and a recommendation from us would be to merge Landsat-8 and Sentinel-2 imagery together to improve the overall accuracy.</p>
+<p><br>
+Word Count: 269</p>
 
 
 </section>

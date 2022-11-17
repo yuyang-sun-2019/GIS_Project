@@ -2,7 +2,7 @@
 title: "About Us"
 ---
 
-About G2T11 ❤️
+About G2T11 ❤️🤗
 
 We are a team of 3 girls, consisting of:
 
@@ -10,18 +10,11 @@ We are a team of 3 girls, consisting of:
 
 ------------------------------------------------------------------------
 
-+-----------------+---------------------------------------------------------------------------------------------------------+-----------------------------------+
 | Authors         | Afiliations                                                                                             | Email Address                     |
-+=================+=========================================================================================================+===================================+
-| Ranullo Avigale | [School of Computer and Information Systems, Singapore Management University](https://scis.smu.edu.sg/) | \                                 |
-|                 |                                                                                                         | rabalisacan.2019\@scis.smu.edu.sg |
-+-----------------+---------------------------------------------------------------------------------------------------------+-----------------------------------+
-| Goh Jia Yiing   | [School of Computer and Information Systems, Singapore Management University](https://scis.smu.edu.sg/) | \                                 |
-|                 |                                                                                                         | jygoh.2019\@scis.smu.edu.sg       |
-+-----------------+---------------------------------------------------------------------------------------------------------+-----------------------------------+
-| Sun Yuyang      | [School of Computer and Information Systems, Singapore Management University](https://scis.smu.edu.sg/) | \                                 |
-|                 |                                                                                                         | yuyang.sun.2019\@scis.smu.edu.sg  |
-+-----------------+---------------------------------------------------------------------------------------------------------+-----------------------------------+
+|---------------------|--------------------------|--------------------------|
+| Ranullo Avigale | [School of Computer and Information Systems, Singapore Management University](https://scis.smu.edu.sg/) | rabalisacan.2019\@scis.smu.edu.sg |
+| Goh Jia Yiing   | [School of Computer and Information Systems, Singapore Management University](https://scis.smu.edu.sg/) | jygoh.2019\@scis.smu.edu.sg       |
+| Sun Yuyang      | [School of Computer and Information Systems, Singapore Management University](https://scis.smu.edu.sg/) | yuyang.sun.2019\@scis.smu.edu.sg  |
 
 ------------------------------------------------------------------------
 

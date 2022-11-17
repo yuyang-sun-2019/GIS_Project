@@ -48,7 +48,7 @@ Results discussed in the following table.
 | Bare Land                | **Accurate**                                 | Misclassification                                         |
 | Spatial Resolution       | Lower                                        | **Higher - clearer images**                               |
 
-Both satellite imagery has their own benefits and shortcomings. We hope that the results would be useful for future land cover classification and a recommendation from us would be to merge Landsat-8 and Sentinel-2 imagery together to improve the overall accuracy.
+Both satellite imagery has their own benefits and shortcomings. We hope that the results would be useful for future land cover classification and in our future works, we aim to merge Landsat-8 and Sentinel-2 imagery to improve the overall accuracy.
 
 \
 Word Count: 269

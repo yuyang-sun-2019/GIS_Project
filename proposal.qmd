@@ -136,5 +136,3 @@ Notes:
     -   **Avigale** suggested that we can look at the north part of Singapore since there are more potential classes to explore.
 
 7.  With that, we all agreed to focus on the North Part of Singapore in this project. We then updated the Gantt chart and split up to finish off the data collection process within the week.
-
-8.  

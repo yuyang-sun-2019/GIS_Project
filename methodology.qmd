@@ -41,10 +41,7 @@ We observed that there majority of the scenes in 2018 were not useful due to the
 
 Under Landsat8, we decided to use bands 1-7 as they have the same spatial resolution of 30m. Similarly, we decided to use bands 2,3,4,8 for Sentinel 2, as they have the same spatial resolution of 10m (Figure 3.1).
 
-
 ![Figure 3.1 : Corresponding Landsat8 and Sentinel-2 bands and characteristics](images/BandCharacteristics.jpg){fig-align="center"}
-
-
 
 We then create band set as such to point to the respective wavelength based on the bands that we have.
 
@@ -52,26 +49,25 @@ We then create band set as such to point to the respective wavelength based on t
 
 From there, we then utilized the band sets to experiment with different combination of color-composites (Figure 3.3 - 3.6) to help us have a better view and better identification of the individual land classification (e.g vegetation, land, water bodies).
 
-::: {layout-ncol=2}
-![Figure 3.3 : False Color Composite of  Sentinel-2](images/s2_fcc.jpg)
+::: {layout-ncol="2"}
+![Figure 3.3 : False Color Composite of Sentinel-2](images/s2_fcc.jpg)
 
-![Figure 3.4 : True Color Composite of  Sentinel-2](images/s2_tcc.jpg)
+![Figure 3.4 : True Color Composite of Sentinel-2](images/s2_tcc.jpg)
 
-![Figure 3.5 : False Color Composite of  Landsat8](images/l8_fcc.jpg)
+![Figure 3.5 : False Color Composite of Landsat8](images/l8_fcc.jpg)
 
-![Figure 3.6 : True Color Composite of  Landsat8](images/l8_tcc.jpg)
+![Figure 3.6 : True Color Composite of Landsat8](images/l8_tcc.jpg)
 :::
-
 
 ## Task 4 : Supervised Classification
 
-In this study, our team only performed supervised classification. According to Guide to GIS and Image Processing,[^1] 
+In this study, our team only performed supervised classification. According to Guide to GIS and Image Processing,[^1]
+
+[^1]: Eastman, J.R. (2003) Guide to GIS and Image Processing 14, 239-247. Clark University Manual, USA.
 
 > "the user develops the spectral signatures of known categories, such as urban and forest, and then the software assigns each pixel in the image to the cover type to which its signature is most comparable"
 
 We felt that supervised classification would be able to help us perform an controlled quantitative analyses of remote sensing image data.
-
-[^1]: Eastman, J.R. (2003) Guide to GIS and Image Processing 14, 239-247. Clark University Manual, USA.
 
 #### Training Sites
 

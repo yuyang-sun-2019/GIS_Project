@@ -200,7 +200,7 @@
     "href": "analysis.html",
     "title": "Analysis",
     "section": "",
-    "text": "### Confusion Matrix"
+    "text": "Minimum Distance algorithm calculates the Euclidean distance d(x,y) between spectral signatures of image pixels and training spectral signatures\n\n\n\nMaximum Likelihood algorithm calculates the probability distributions for the classes, related to Bayes’ theorem, estimating if a pixel belongs to a land cover class.\n\n\n\nAccording to the figure above, Minimum Distance Algorithm performed better on Sentinel-2 than Landsat8 while Maximum Algorithm performed better on Landsat8 than on Sentinel-2. However, we decided to use Maximum Likelihood algorithm as on average the algorithm outperformed Minimum Distance Algorithm. Maximum Likelihood algorithm is also widely common to be used for land cover classification. 1"
   },
   {
     "objectID": "index.html#abstract",
@@ -236,5 +236,40 @@
     "title": "Methodology",
     "section": "Task 1: Selection of Study Area",
     "text": "Task 1: Selection of Study Area\nWe chose Singapore as our primary area of study as our team felt more familiar with the identification of land covers in our local country. We ventured around Singapore to find areas suitable for land classification. Through Open Street Map and Google Maps, we compared between different parts of Singapore (Figure 1.1) and found that the North of Singapore has an abundance of green covers and water bodies that can be further classified (Figure 1.2).\nWith that, we decided to focus on North of Singapore due to its wide variety of land classifications.\n\n\n\nFigure 1.1 Study Area Selection\n\n\n\n\n\nFigure 1.2 Finalized Study Area"
+  },
+  {
+    "objectID": "analysis.html#landsat-8",
+    "href": "analysis.html#landsat-8",
+    "title": "Analysis",
+    "section": "Landsat 8",
+    "text": "Landsat 8\n\nPair-wise\n\n\n\nConfusion Matrix\n\n\n\nKappa Hat/Overall"
+  },
+  {
+    "objectID": "analysis.html#sentinel-2",
+    "href": "analysis.html#sentinel-2",
+    "title": "Analysis",
+    "section": "Sentinel-2",
+    "text": "Sentinel-2\n\nPair-wise\n\n\n Confusion Matrix \n\n\nKappa Hat/Overall"
+  },
+  {
+    "objectID": "analysis.html#minimum-distance",
+    "href": "analysis.html#minimum-distance",
+    "title": "Analysis",
+    "section": "Minimum Distance",
+    "text": "Minimum Distance\nMinimum Distance algorithm calculates the Euclidean distance d(x,y) between spectral signatures of image pixels and training spectral signatures"
+  },
+  {
+    "objectID": "analysis.html#maximum-likelihood",
+    "href": "analysis.html#maximum-likelihood",
+    "title": "Analysis",
+    "section": "Maximum Likelihood",
+    "text": "Maximum Likelihood\nMaximum Likelihood algorithm calculates the probability distributions for the classes, related to Bayes’ theorem, estimating if a pixel belongs to a land cover class."
+  },
+  {
+    "objectID": "analysis.html#accuracy-assessment",
+    "href": "analysis.html#accuracy-assessment",
+    "title": "Analysis",
+    "section": "Accuracy Assessment",
+    "text": "Accuracy Assessment\nAfter classification, we need to check the integrity of our results and ensure that our final output is reliable. Accuracy assessment is done by comparing our classification results with ground truth data, which in this case our test samples. Test samples will then be compared with the train samples to the classification results in a confusion matrix. 2\n\nLandsat 8\n\nPair-wise\n\n\n\nConfusion Matrix\n\nBased on the confusion matrix, we can see that Bare land, Built-up 2 and Impervious surfaces are doing poorly.\n\n\n\nKappa Hat/Overall\n\n\n\n\nSentinel-2\n\nPair-wise\n\n\n\nConfusion Matrix\n\nConfusion Matrix \n\n\nKappa Hat/Overall"
   }
 ]

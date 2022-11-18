@@ -120,20 +120,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#accuracy-assessment" id="toc-accuracy-assessment" class="nav-link active" data-scroll-target="#accuracy-assessment">Accuracy Assessment</a>
+  <li><a href="#classification-algorithms" id="toc-classification-algorithms" class="nav-link active" data-scroll-target="#classification-algorithms">Classification Algorithms</a>
   <ul class="collapse">
-  <li><a href="#landsat-8" id="toc-landsat-8" class="nav-link" data-scroll-target="#landsat-8">Landsat 8</a>
-  <ul class="collapse">
-  <li><a href="#pair-wise" id="toc-pair-wise" class="nav-link" data-scroll-target="#pair-wise">Pair-wise</a></li>
-  <li><a href="#confusion-matrix" id="toc-confusion-matrix" class="nav-link" data-scroll-target="#confusion-matrix">Confusion Matrix</a></li>
-  <li><a href="#kappa-hatoverall" id="toc-kappa-hatoverall" class="nav-link" data-scroll-target="#kappa-hatoverall">Kappa Hat/Overall</a></li>
+  <li><a href="#minimum-distance" id="toc-minimum-distance" class="nav-link" data-scroll-target="#minimum-distance">Minimum Distance</a></li>
+  <li><a href="#maximum-likelihood" id="toc-maximum-likelihood" class="nav-link" data-scroll-target="#maximum-likelihood">Maximum Likelihood</a></li>
+  <li><a href="#comparison-between-the-classification-algorithms" id="toc-comparison-between-the-classification-algorithms" class="nav-link" data-scroll-target="#comparison-between-the-classification-algorithms">Comparison between the classification algorithms</a></li>
   </ul></li>
-  <li><a href="#sentinel-2" id="toc-sentinel-2" class="nav-link" data-scroll-target="#sentinel-2">Sentinel-2</a>
+  <li><a href="#accuracy-assessment" id="toc-accuracy-assessment" class="nav-link" data-scroll-target="#accuracy-assessment">Accuracy Assessment</a>
   <ul class="collapse">
-  <li><a href="#pair-wise-1" id="toc-pair-wise-1" class="nav-link" data-scroll-target="#pair-wise-1">Pair-wise</a></li>
-  <li><a href="#confusion-matrix-1" id="toc-confusion-matrix-1" class="nav-link" data-scroll-target="#confusion-matrix-1"><img src="images/s2_pairwise.jpg" class="img-fluid"> Confusion Matrix <img src="images/s2_confusionmatrix.jpg" class="img-fluid"></a></li>
-  <li><a href="#kappa-hatoverall-1" id="toc-kappa-hatoverall-1" class="nav-link" data-scroll-target="#kappa-hatoverall-1">Kappa Hat/Overall</a></li>
-  </ul></li>
+  <li><a href="#landsat-8" id="toc-landsat-8" class="nav-link" data-scroll-target="#landsat-8">Landsat 8</a></li>
+  <li><a href="#sentinel-2" id="toc-sentinel-2" class="nav-link" data-scroll-target="#sentinel-2">Sentinel-2</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -157,33 +153,55 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="accuracy-assessment" class="level1">
-<h1>Accuracy Assessment</h1>
-<section id="landsat-8" class="level2">
-<h2 class="anchored" data-anchor-id="landsat-8">Landsat 8</h2>
-<section id="pair-wise" class="level3">
-<h3 class="anchored" data-anchor-id="pair-wise">Pair-wise</h3>
+<section id="classification-algorithms" class="level2">
+<h2 class="anchored" data-anchor-id="classification-algorithms">Classification Algorithms</h2>
+<section id="minimum-distance" class="level3">
+<h3 class="anchored" data-anchor-id="minimum-distance">Minimum Distance</h3>
+<p>Minimum Distance algorithm calculates the Euclidean distance d(x,y) between spectral signatures of image pixels and training spectral signatures</p>
+</section>
+<section id="maximum-likelihood" class="level3">
+<h3 class="anchored" data-anchor-id="maximum-likelihood">Maximum Likelihood</h3>
+<p>Maximum Likelihood algorithm calculates the probability distributions for the classes, related to Bayes’ theorem, estimating if a pixel belongs to a land cover class.</p>
+</section>
+<section id="comparison-between-the-classification-algorithms" class="level3">
+<h3 class="anchored" data-anchor-id="comparison-between-the-classification-algorithms">Comparison between the classification algorithms</h3>
+<p>According to the figure above, Minimum Distance Algorithm performed better on Sentinel-2 than Landsat8 while Maximum Algorithm performed better on Landsat8 than on Sentinel-2. However, we decided to use Maximum Likelihood algorithm as on average the algorithm outperformed Minimum Distance Algorithm. Maximum Likelihood algorithm is also widely common to be used for land cover classification. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p><img src="images/algorithms.jpg" class="img-fluid"></p>
+</section>
+</section>
+<section id="accuracy-assessment" class="level2">
+<h2 class="anchored" data-anchor-id="accuracy-assessment">Accuracy Assessment</h2>
+<p>After classification, we need to check the integrity of our results and ensure that our final output is reliable. Accuracy assessment is done by comparing our classification results with ground truth data, which in this case our test samples. Test samples will then be compared with the train samples to the classification results in a confusion matrix. <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<section id="landsat-8" class="level3">
+<h3 class="anchored" data-anchor-id="landsat-8">Landsat 8</h3>
+<section id="pair-wise" class="level4">
+<h4 class="anchored" data-anchor-id="pair-wise">Pair-wise</h4>
 <p><img src="images/l8_pairwise.jpg" class="img-fluid"></p>
 </section>
-<section id="confusion-matrix" class="level3">
-<h3 class="anchored" data-anchor-id="confusion-matrix">Confusion Matrix</h3>
+<section id="confusion-matrix" class="level4">
+<h4 class="anchored" data-anchor-id="confusion-matrix">Confusion Matrix</h4>
+<p><img src="images/l8_cm.jpg" class="img-fluid" width="430"></p>
+<p>Based on the confusion matrix, we can see that Bare land, Built-up 2 and Impervious surfaces are doing poorly.</p>
 <p><img src="images/l8_confusion%20matrix.jpg" class="img-fluid"></p>
 </section>
-<section id="kappa-hatoverall" class="level3">
-<h3 class="anchored" data-anchor-id="kappa-hatoverall">Kappa Hat/Overall</h3>
+<section id="kappa-hatoverall" class="level4">
+<h4 class="anchored" data-anchor-id="kappa-hatoverall">Kappa Hat/Overall</h4>
 <p><img src="images/l8_kappa.jpg" class="img-fluid"></p>
 </section>
 </section>
-<section id="sentinel-2" class="level2">
-<h2 class="anchored" data-anchor-id="sentinel-2">Sentinel-2</h2>
-<section id="pair-wise-1" class="level3">
-<h3 class="anchored" data-anchor-id="pair-wise-1">Pair-wise</h3>
+<section id="sentinel-2" class="level3">
+<h3 class="anchored" data-anchor-id="sentinel-2">Sentinel-2</h3>
+<section id="pair-wise-1" class="level4">
+<h4 class="anchored" data-anchor-id="pair-wise-1">Pair-wise</h4>
+<p><img src="images/s2_pairwise.jpg" class="img-fluid"></p>
 </section>
-<section id="confusion-matrix-1" class="level3">
-<h3 class="anchored" data-anchor-id="confusion-matrix-1"><img src="images/s2_pairwise.jpg" class="img-fluid"> Confusion Matrix <img src="images/s2_confusionmatrix.jpg" class="img-fluid"></h3>
+<section id="confusion-matrix-1" class="level4">
+<h4 class="anchored" data-anchor-id="confusion-matrix-1">Confusion Matrix</h4>
+<p><img src="images/s2_mc.jpg" class="img-fluid" width="430"></p>
+<p>Confusion Matrix <img src="images/s2_confusionmatrix.jpg" class="img-fluid"></p>
 </section>
-<section id="kappa-hatoverall-1" class="level3">
-<h3 class="anchored" data-anchor-id="kappa-hatoverall-1">Kappa Hat/Overall</h3>
+<section id="kappa-hatoverall-1" class="level4">
+<h4 class="anchored" data-anchor-id="kappa-hatoverall-1">Kappa Hat/Overall</h4>
 <p><img src="images/s2_Kappa%20Matrix.jpg" class="img-fluid"></p>
 
 
@@ -191,7 +209,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>C Tucker D Grant &amp; J Dykstra. NASA’s Global Orthorectified Landsat Data set. Photogramm. Eng. Rem. Sens. 2004, 70, 313-22.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Luca Congedo (2014) Accuracy Assessment Using Random Points and the Semi-Automatic Classification Plugin for QGIS, From GIS to Remote Sensing. https://fromgistors.blogspot.com/2014/09/accuracy-assessment-using-random-points.html<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

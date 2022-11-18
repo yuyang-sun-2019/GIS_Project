@@ -9,45 +9,67 @@ Here is an overview of our workflow for our accuracy assessment for both Landsat
 
 ## Task 1: Selection of Study Area
 
-We chose Singapore as our primary area of study as our team felt more familiar with the identification of land covers in our local country. We ventured around Singapore to find areas suitable for land classification. Through Open Street Map and Google Maps, we compared between different parts of Singapore and found that the North of Singapore has an abundance of green covers and water bodies that can be further classified. With that, we decided to focus on **North of Singapore** due to its wide variety of land classifications.
+We chose Singapore as our primary area of study as our team felt more familiar with the identification of land covers in our local country. We ventured around Singapore to find areas suitable for land classification. Through Open Street Map and Google Maps, we compared between different parts of Singapore (Figure 1.1) and found that the North of Singapore has an abundance of green covers and water bodies that can be further classified (Figure 1.2).
 
-![](images/studyarea.jpg){fig-align="center"}
+With that, we decided to focus on **North of Singapore** due to its wide variety of land classifications.
+
+![Figure 1.1 Study Area Selection](images/studyarea_selection.jpg)
+
+![Figure 1.2 Finalized Study Area](images/studyarea.jpg)
 
 ## Task 2: Data Collection
 
-We first gather the satellite imagery data from [Landsat 8](https://earthexplorer.usgs.gov/) from Geo-explore and [Sentinel-2](https://scihub.copernicus.eu/dhus/#/home) from Copernicus Open Access Hub. The selection of both satellite imagery was influenced by the study area selection, and we looked out for higher quality image with limited or low cloud cover. All data sets are Geo-referenced to WGS_84 as it was the pre-defined CRS (Coordinate Reference System) for them.
+We first gather the satellite imagery data from [Landsat 8](https://earthexplorer.usgs.gov/) from EarthExplorer and [Sentinel-2](https://scihub.copernicus.eu/dhus/#/home) from Copernicus Open Access Hub. The selection of both satellite imagery was influenced by the study area selection, and we looked out for higher quality image (e.g limited or low cloud cover). All data sets are geo-referenced to WGS_84 as it was the pre-defined CRS (Coordinate Reference System) for them.
 
 #### Landsat 8
 
-![`Figure 1 Potential Landsat Scenes`](images/potential_landsat.jpg){fig-align="center" width="487"}
+![Figure 2.1 Potential Landsat 8 Scenes](images/potential_landsat.jpg){fig-align="center" width="487"}
 
-Here are some of the potential data sets (Figure 1) that we have chosen to work with. However, as we can see from Figure 1.1 , there are some imagery that has massive cloud cover around Singapore. Hence we eliminate them and chose 20180524 data.
+Here are some of the potential data sets (Figure 2.1) that we have chosen to work with. However, as we can see from Figure 2.2 , there are some imagery that has massive cloud cover around Singapore. Hence we eliminate them and chose 20180524 scene data.
 
-![`Figure 1.1 Landsat 8 samples`](images/landsat_8%20previews.jpg){fig-align="center" width="534"}
+![Figure 2.2 Landsat 8 samples](images/landsat_8%20previews.jpg){fig-align="center" width="534"}
 
 #### Sentinel-2
 
 After obtaining Landsat 8 remote sensing data, we then proceed to narrow down our search for an appropriate scenes in Sentinel-2.
 
-We observed that there majority of the scenes in 2018 were not useful due to the large cloud cover,which may obstruct our view during analysis. Hence we decided to look into 2019 and 2020 and selected the 20200126 scene to conduct further analysis.
+We observed that there majority of the scenes in 2018 were not useful due to the large cloud cover (Figure 2.3),which may obstruct our view during analysis. Hence we decided to look into 2019 and 2020 and selected the 20200126 scene to conduct further analysis.
 
-![`Figure 1.2 : Collection of Sentinel-2 Imagery Samples`](images/sentinel_2_potential_scenes.jpg){fig-align="center"}
+![Figure 2.3 : Collection of Sentinel-2 Imagery Scenes](images/sentinel_2_potential_scenes.jpg){fig-align="center"}
 
 ## Task 3 : Image Pre-processing
 
-Under Landsat8, we decided to use bands 1-7 as they have the same spatial resolution of 30m. Similarly, we decided to use bands 2,3,4,8 for Sentinel 2, as they have the same spatial resolution of 10m.
+Under Landsat8, we decided to use bands 1-7 as they have the same spatial resolution of 30m. Similarly, we decided to use bands 2,3,4,8 for Sentinel 2, as they have the same spatial resolution of 10m (Figure 3.1).
+
+
+![Figure 3.1 : Corresponding Landsat8 and Sentinel-2 bands and characteristics](images/BandCharacteristics.jpg){fig-align="center"}
+
+
 
 We then create band set as such to point to the respective wavelength based on the bands that we have.
 
-![`Figure 2.0: Example band sets`](images/s2_bandset.jpg){fig-align="center"}
+![Figure 3.2: Example band sets of Sentinel-2](images/s2_bandset.jpg){fig-align="center"}
 
-From there, we then utilized the band sets to experiment with different combination of color-composites to help us have a better view and better identification of the individual land classification (e.g vegetation, land, water bodies).
+From there, we then utilized the band sets to experiment with different combination of color-composites (Figure 3.3 - 3.6) to help us have a better view and better identification of the individual land classification (e.g vegetation, land, water bodies).
 
-![`Figure 2.1 : False Color Composite of Sentinel-2`](images/s2_fcc.jpg){fig-align="center"}
+::: {layout-ncol=2}
+![Figure 3.3 : False Color Composite of  Sentinel-2](images/s2_fcc.jpg)
+
+![Figure 3.4 : True Color Composite of  Sentinel-2](images/s2_tcc.jpg)
+
+![Figure 3.5 : False Color Composite of  Landsat8](images/l8_fcc.jpg)
+
+![Figure 3.6 : True Color Composite of  Landsat8](images/l8_tcc.jpg)
+:::
+
 
 ## Task 4 : Supervised Classification
 
-In this study, our team only performed supervised classification. According to Guide to GIS and Image Processing,[^1] "the user develops the spectral signatures of known categories, such as urban and forest, and then the software assigns each pixel in the image to the cover type to which its signature is most comparable". We felt that supervised classification would be able to help us perform an controlled quantitative analyses of remote sensing image data.
+In this study, our team only performed supervised classification. According to Guide to GIS and Image Processing,[^1] 
+
+> "the user develops the spectral signatures of known categories, such as urban and forest, and then the software assigns each pixel in the image to the cover type to which its signature is most comparable"
+
+We felt that supervised classification would be able to help us perform an controlled quantitative analyses of remote sensing image data.
 
 [^1]: Eastman, J.R. (2003) Guide to GIS and Image Processing 14, 239-247. Clark University Manual, USA.
 
@@ -55,17 +77,17 @@ In this study, our team only performed supervised classification. According to G
 
 Here are our 9 classes that we have defined.
 
-![`Figure 3.0: Land Classification Classes`](images/classes.jpg){fig-align="center" width="481"}
+![Figure 4.1: Land Classification Classes](images/classes.jpg){fig-align="center" width="481"}
 
 Using the SCP Plugin, we defined the areas that will be used as training sites to create the ROIs (Regions of Interest) and spectral signatures required for the classification of a band set.
 
-![`Figure 3.1: Example of sites identified`](images/S2_test.jpg){fig-align="center"}
+![Figure 4.2: Example of sites identified](images/S2_test.jpg){fig-align="center"}
 
 #### Spectural Signature Plot
 
 Spectural Signature includes several functions for displaying spectral signature values as a function of wavelength(defined in the band set). If common classifications are too near to the extent that they overlap, it will be hard differentiate the different classes(e.g managed vegetation, natural vegetation)
 
-![`Figure 4.0: Example of Spectural Plot`](images/landcomparision_s2.jpg){fig-align="center"}
+![Figure 4.3: Example of Spectural Plot](images/landcomparision_s2.jpg){fig-align="center"}
 
 #### Supervised Classification
 

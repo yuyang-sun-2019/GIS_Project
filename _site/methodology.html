@@ -154,79 +154,129 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="task-1-selection-of-study-area" class="level2">
 <h2 class="anchored" data-anchor-id="task-1-selection-of-study-area">Task 1: Selection of Study Area</h2>
-<p>We chose Singapore as our primary area of study as our team felt more familiar with the identification of land covers in our local country. We ventured around Singapore to find areas suitable for land classification. Through Open Street Map and Google Maps, we compared between different parts of Singapore and found that the North of Singapore has an abundance of green covers and water bodies that can be further classified. With that, we decided to focus on <strong>North of Singapore</strong> due to its wide variety of land classifications.</p>
+<p>We chose Singapore as our primary area of study as our team felt more familiar with the identification of land covers in our local country. We ventured around Singapore to find areas suitable for land classification. Through Open Street Map and Google Maps, we compared between different parts of Singapore (Figure 1.1) and found that the North of Singapore has an abundance of green covers and water bodies that can be further classified (Figure 1.2).</p>
+<p>With that, we decided to focus on <strong>North of Singapore</strong> due to its wide variety of land classifications.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/studyarea_selection.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 1.1 Study Area Selection</figcaption><p></p>
+</figure>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/studyarea.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 1.2 Finalized Study Area</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="task-2-data-collection" class="level2">
 <h2 class="anchored" data-anchor-id="task-2-data-collection">Task 2: Data Collection</h2>
-<p>We first gather the satellite imagery data from <a href="https://earthexplorer.usgs.gov/">Landsat 8</a> from Geo-explore and <a href="https://scihub.copernicus.eu/dhus/#/home">Sentinel-2</a> from Copernicus Open Access Hub. The selection of both satellite imagery was influenced by the study area selection, and we looked out for higher quality image with limited or low cloud cover. All data sets are Geo-referenced to WGS_84 as it was the pre-defined CRS (Coordinate Reference System) for them.</p>
+<p>We first gather the satellite imagery data from <a href="https://earthexplorer.usgs.gov/">Landsat 8</a> from EarthExplorer and <a href="https://scihub.copernicus.eu/dhus/#/home">Sentinel-2</a> from Copernicus Open Access Hub. The selection of both satellite imagery was influenced by the study area selection, and we looked out for higher quality image (e.g limited or low cloud cover). All data sets are geo-referenced to WGS_84 as it was the pre-defined CRS (Coordinate Reference System) for them.</p>
 <section id="landsat-8" class="level4">
 <h4 class="anchored" data-anchor-id="landsat-8">Landsat 8</h4>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/potential_landsat.jpg" class="img-fluid figure-img" width="487"></p>
-<p></p><figcaption class="figure-caption"><code>Figure 1 Potential Landsat Scenes</code></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 2.1 Potential Landsat 8 Scenes</figcaption><p></p>
 </figure>
 </div>
-<p>Here are some of the potential data sets (Figure 1) that we have chosen to work with. However, as we can see from Figure 1.1 , there are some imagery that has massive cloud cover around Singapore. Hence we eliminate them and chose 20180524 data.</p>
+<p>Here are some of the potential data sets (Figure 2.1) that we have chosen to work with. However, as we can see from Figure 2.2 , there are some imagery that has massive cloud cover around Singapore. Hence we eliminate them and chose 20180524 scene data.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/landsat_8%20previews.jpg" class="img-fluid figure-img" width="534"></p>
-<p></p><figcaption class="figure-caption"><code>Figure 1.1 Landsat 8 samples</code></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 2.2 Landsat 8 samples</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="sentinel-2" class="level4">
 <h4 class="anchored" data-anchor-id="sentinel-2">Sentinel-2</h4>
 <p>After obtaining Landsat 8 remote sensing data, we then proceed to narrow down our search for an appropriate scenes in Sentinel-2.</p>
-<p>We observed that there majority of the scenes in 2018 were not useful due to the large cloud cover,which may obstruct our view during analysis. Hence we decided to look into 2019 and 2020 and selected the 20200126 scene to conduct further analysis.</p>
+<p>We observed that there majority of the scenes in 2018 were not useful due to the large cloud cover (Figure 2.3),which may obstruct our view during analysis. Hence we decided to look into 2019 and 2020 and selected the 20200126 scene to conduct further analysis.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/sentinel_2_potential_scenes.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><code>Figure 1.2 : Collection of Sentinel-2 Imagery Samples</code></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 2.3 : Collection of Sentinel-2 Imagery Scenes</figcaption><p></p>
 </figure>
 </div>
 </section>
 </section>
 <section id="task-3-image-pre-processing" class="level2">
 <h2 class="anchored" data-anchor-id="task-3-image-pre-processing">Task 3 : Image Pre-processing</h2>
-<p>Under Landsat8, we decided to use bands 1-7 as they have the same spatial resolution of 30m. Similarly, we decided to use bands 2,3,4,8 for Sentinel 2, as they have the same spatial resolution of 10m.</p>
+<p>Under Landsat8, we decided to use bands 1-7 as they have the same spatial resolution of 30m. Similarly, we decided to use bands 2,3,4,8 for Sentinel 2, as they have the same spatial resolution of 10m (Figure 3.1).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/BandCharacteristics.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 3.1 : Corresponding Landsat8 and Sentinel-2 bands and characteristics</figcaption><p></p>
+</figure>
+</div>
 <p>We then create band set as such to point to the respective wavelength based on the bands that we have.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/s2_bandset.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><code>Figure 2.0: Example band sets</code></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 3.2: Example band sets of Sentinel-2</figcaption><p></p>
 </figure>
 </div>
-<p>From there, we then utilized the band sets to experiment with different combination of color-composites to help us have a better view and better identification of the individual land classification (e.g vegetation, land, water bodies).</p>
+<p>From there, we then utilized the band sets to experiment with different combination of color-composites (Figure 3.3 - 3.6) to help us have a better view and better identification of the individual land classification (e.g vegetation, land, water bodies).</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/s2_fcc.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><code>Figure 2.1 : False Color Composite of Sentinel-2</code></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 3.3 : False Color Composite of Sentinel-2</figcaption><p></p>
 </figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/s2_tcc.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 3.4 : True Color Composite of Sentinel-2</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/l8_fcc.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 3.5 : False Color Composite of Landsat8</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/l8_tcc.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 3.6 : True Color Composite of Landsat8</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="task-4-supervised-classification" class="level2">
 <h2 class="anchored" data-anchor-id="task-4-supervised-classification">Task 4 : Supervised Classification</h2>
-<p>In this study, our team only performed supervised classification. According to Guide to GIS and Image Processing,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> “the user develops the spectral signatures of known categories, such as urban and forest, and then the software assigns each pixel in the image to the cover type to which its signature is most comparable”. We felt that supervised classification would be able to help us perform an controlled quantitative analyses of remote sensing image data.</p>
+<p>In this study, our team only performed supervised classification. According to Guide to GIS and Image Processing,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<blockquote class="blockquote">
+<p>“the user develops the spectral signatures of known categories, such as urban and forest, and then the software assigns each pixel in the image to the cover type to which its signature is most comparable”</p>
+</blockquote>
+<p>We felt that supervised classification would be able to help us perform an controlled quantitative analyses of remote sensing image data.</p>
 <section id="training-sites" class="level4">
 <h4 class="anchored" data-anchor-id="training-sites">Training Sites</h4>
 <p>Here are our 9 classes that we have defined.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/classes.jpg" class="img-fluid figure-img" width="481"></p>
-<p></p><figcaption class="figure-caption"><code>Figure 3.0: Land Classification Classes</code></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 4.1: Land Classification Classes</figcaption><p></p>
 </figure>
 </div>
 <p>Using the SCP Plugin, we defined the areas that will be used as training sites to create the ROIs (Regions of Interest) and spectral signatures required for the classification of a band set.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/S2_test.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><code>Figure 3.1: Example of sites identified</code></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 4.2: Example of sites identified</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -236,7 +286,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/landcomparision_s2.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><code>Figure 4.0: Example of Spectural Plot</code></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 4.3: Example of Spectural Plot</figcaption><p></p>
 </figure>
 </div>
 </section>

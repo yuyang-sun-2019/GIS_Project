@@ -5,21 +5,21 @@ editor: visual
 
 ## 1. Motivation of Project
 
-Land cover classification is an important remote sensing application. Satellite optical and radar images are two of the most widely used remote sensing images with respective advantages and disadvantages.
+Land cover classification is an important remote sensing application. Accurate identification of land cover provides a proper baseline for activities like change detection and thematic mapping to make planning decisions.
 
-Using both radar and optical images and machine learning, this project is to explore automatic land cover classification traditionally done manually or semi-manually.
+Through supervised classification, we can understand the strengths and weaknesses of the 2 satellites.
 
 ## 2. Project Objective
 
-The objective of the project is to study, develop and compare different ensemble/non-ensemble machine learning algorithms for the and learn the pre-processing procedure and general flow of any land-cover classification based on the remote sensing data. By analyzing different classification results with various machine learning algorithms, we can get a deep understanding of discriminating machine learning problems.
+The objective of the project is to study and compare the differences in remote sensing satellite data (Landsat 8, Sentinel-2). Through the project, we will also learn the pre-processing procedure and general flow of any land-cover classification. By analyzing different classification results with various machine learning algorithms, we can get a deep understanding of discriminating machine learning problems.
 
 ## 3. Data Collected
 
 The study area is located at the north of Singapore. The north of Singapore holds a variety of landscape characteristics which is useful for classification.
 
-1.  Landsat 8 (20180524) Imagery (Bands 1-7)
+1.  Landsat 8 (20180524) Imagery (Bands 1-7). The data can be accessed [here](https://www.usgs.gov/landsat-missions/landsat-8).
 
-2.  Sentinel-2 (20200126) Imagery (Bands 2,3,4,8)
+2.  Sentinel-2 (20200126) Imagery (Bands 2,3,4,8). The data can be accessed [here](https://scihub.copernicus.eu/).
 
 ## 4. Scope of Work
 
@@ -39,7 +39,7 @@ More details on the decision making process could be viewed under [6.1 Meeting M
 
 More details could be viewed under the [Methodology](https://gisproject-g2t11.netlify.app/methodology.html) page
 
-#### Task 3: Supervised Classifcation
+#### Task 3: Supervised Classification
 
 -   Image pre-processing
 
@@ -47,15 +47,15 @@ More details could be viewed under the [Methodology](https://gisproject-g2t11.ne
 
 -   Spectral signature plot
 
--   Comparison between max likelihood & min distancing
+-   Comparison between machine learning algorithms (Minimum Distance and Maximum Likelihood)
 
--   Accuracy Assessment
+-   Accuracy Assessment of Remote Sensing Satellite Data
 
 More details could be viewed under the [Methodology](https://gisproject-g2t11.netlify.app/methodology.html) page
 
-#### Task 4: Report & Poster 
+#### Task 4: Report & Poster
 
--   Write on analysis of findings
+-   Analysis, Findings, Discussion
 
 -   Design of poster
 
@@ -69,7 +69,7 @@ More details could be viewed under the [Poster](https://gisproject-g2t11.netlify
 
 ## 5. Project Schedule
 
-This is our project Gannt Chart, more details on Task Allocation can be found in [6.0 Task allocation].
+This is our project Gantt Chart, more details on Task Allocation can be found in [6.0 Task allocation].
 
 [![](images/gant_4.png)](https://smu-my.sharepoint.com/:x:/g/personal/jygoh_2019_scis_smu_edu_sg/EZ5HsDgba5lAlflwt2EjbA4Bni3XYU2dZPNwZYJNk7b0NQ?e=GZPEkn)
 
@@ -83,7 +83,7 @@ This is our project Gannt Chart, more details on Task Allocation can be found in
 | Task 2: Data Collection           | Jia Yiing, Yuyang          |
 | Task 3: Supervised Classification | Avigale, Jia Yiing, Yuyang |
 | Task 4: Poster Design             | Avigale, Jia Yiing         |
-| Task 5: Website Maintanence       | Yuyang, Jia Yiing          |
+| Task 5: Website Maintenance       | Yuyang, Jia Yiing          |
 
 ### 6.1 Meeting Minutes
 
@@ -105,7 +105,7 @@ Agenda:
 
 Notes:
 
-1.   The meeting started with every member consolidating notes from the consultation with prof that ended earlier.
+1.  The meeting started with every member consolidating notes from the consultation with prof that ended earlier.
 
 2.  Then every member sharing about the literature studies that they have conducted with regards to each sub-theme.
 
@@ -125,7 +125,7 @@ Notes:
 
     -   **Yuyang** thought Shanghai would be easier to do because there is a more rapid land usage change observed in the recent years.
 
-    -   However, **Jia Yiing** quickly pointed out we are doing land cover classification and not land use. Philippine is interesting to do but we might be unfamiliar with the area to judge the classes for classification.
+    -   However, **Jia Yiing** quickly pointed out we are doing land cover classification and not land use. Philippines is interesting to do but we might be unfamiliar with the area to judge the classes for classification.
 
 6.  We then quickly come to a consensus that maybe we should explore Singapore instead since we are more familiar with the area.
 

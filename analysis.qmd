@@ -36,8 +36,9 @@ After classification, we need to check the integrity of our results and ensure t
 #### Confusion Matrix
 
 ![](images/l8_cm.jpg){width="430"}
+Evaluation of confusion matrix
 
-Based on the confusion matrix, we can see that Bare land, Built-up 2 and Impervious surfaces are doing poorly.
+Based on the confusion matrix, we can see that Bare land, Built-up 2 and Impervious surfaces are doing poorly. As for the Built-up 3, Managed vegetation, Inland water, they are able to distinguish the respective classes well (> 70%).
 
 ![](images/l8_confusion%20matrix.jpg)
 
@@ -54,6 +55,9 @@ Based on the confusion matrix, we can see that Bare land, Built-up 2 and Impervi
 #### Confusion Matrix
 
 ![](images/s2_mc.jpg){width="430"}
+Evaluation of confusion matrix
+
+Based on the confusion matrix, we can see that Natural vegetation, Built-up 2 and Bare land are having difficulty differentiating, whereas Impervious surfaces, Water body and Inland water are able to differentiate amongst the pixels well. 
 
 Confusion Matrix ![](images/s2_confusionmatrix.jpg)
 

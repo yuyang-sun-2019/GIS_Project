@@ -39,7 +39,7 @@
     "href": "about.html",
     "title": "About Us",
     "section": "",
-    "text": "We are a team of 3 girls, consisting of:\n\n\n\n\n\nAuthors\nAfiliations\nEmail Address\n\n\n\n\nRanullo Avigale\nSchool of Computer and Information Systems, Singapore Management University\nrabalisacan.2019@scis.smu.edu.sg\n\n\nGoh Jia Yiing\nSchool of Computer and Information Systems, Singapore Management University\njygoh.2019@scis.smu.edu.sg\n\n\nSun Yuyang\nSchool of Computer and Information Systems, Singapore Management University\nyuyang.sun.2019@scis.smu.edu.sg\n\n\n\n\nWe would also like to take this opportunity to thank our Associate Professor Dr. KAM Tin Seong for his continuous guidance and support through this project.\nData Published : 18 Nov 2022"
+    "text": "We are a team of 3 girls, consisting of:\n\nTownhall Presentation\n\n\n\n\n\n\n\n\n\nAuthors\nAfiliations\nEmail Address\n\n\n\n\nRanullo Avigale\nSchool of Computer and Information Systems, Singapore Management University\nrabalisacan.2019@scis.smu.edu.sg\n\n\nGoh Jia Yiing\nSchool of Computer and Information Systems, Singapore Management University\njygoh.2019@scis.smu.edu.sg\n\n\nSun Yuyang\nSchool of Computer and Information Systems, Singapore Management University\nyuyang.sun.2019@scis.smu.edu.sg\n\n\n\n\nWe would also like to take this opportunity to thank our Associate Professor Dr. KAM Tin Seong for his continuous guidance and support through this project.\nData Published : 18 Nov 2022"
   },
   {
     "objectID": "Overview.html#poster",
@@ -193,7 +193,7 @@
     "href": "findings.html#literature-review",
     "title": "Findings",
     "section": "Literature Review",
-    "text": "Literature Review\nOur team has conducted several literatures reviews and found that out Sentinel-2A data has similar spectral bands and geometric accuracy to Landsat 8. (EROS, 2019) Readings also suggest that when the red-edge bands in both datasets are being compared, a combination of both Landsat-8 and Sentinel-2 red-edge bands resulted in a higher accuracy index than Landsat-8 alone. (Gerald Forkuor et al, 2018) Therefore, we wanted to use the comparison study as an opportunity to explore the data insights that both datasets could be used to uncover."
+    "text": "Literature Review\nOur team has conducted several literatures reviews and found that out Sentinel-2A data has similar spectral bands and geometric accuracy to Landsat 8. (EROS, 2019) 1 Readings also suggest that when the red-edge bands in both datasets are being compared, a combination of both Landsat-8 and Sentinel-2 red-edge bands resulted in a higher accuracy index than Landsat-8 alone. (Gerald Forkuor et al, 2018)2\nTherefore, we wanted to use the comparison study as an opportunity to explore the data insights that both datasets could be used to uncover."
   },
   {
     "objectID": "analysis.html",
@@ -270,6 +270,6 @@
     "href": "analysis.html#accuracy-assessment",
     "title": "Analysis",
     "section": "Accuracy Assessment",
-    "text": "Accuracy Assessment\nAfter classification, we need to check the integrity of our results and ensure that our final output is reliable. Accuracy assessment is done by comparing our classification results with ground truth data, which in this case our test samples. Test samples will then be compared with the train samples to the classification results in a confusion matrix. 2\n\nLandsat 8\n\nPair-wise\n\n\n\nConfusion Matrix\n\nBased on the confusion matrix, we can see that Bare land, Built-up 2 and Impervious surfaces are doing poorly.\n\n\n\nKappa Hat/Overall\n\n\n\n\nSentinel-2\n\nPair-wise\n\n\n\nConfusion Matrix\n\nConfusion Matrix \n\n\nKappa Hat/Overall"
+    "text": "Accuracy Assessment\nAfter classification, we need to check the integrity of our results and ensure that our final output is reliable. Accuracy assessment is done by comparing our classification results with ground truth data, which in this case our test samples. Test samples will then be compared with the train samples to the classification results in a confusion matrix. 2\n\nLandsat 8\n\nPair-wise\n\n\n\nConfusion Matrix\n Evaluation of confusion matrix\nBased on the confusion matrix, we can see that Bare land, Built-up 2 and Impervious surfaces are doing poorly. As for the Built-up 3, Managed vegetation, Inland water, they are able to distinguish the respective classes well (> 70%).\n\n\n\nKappa Hat/Overall\n\n\n\n\nSentinel-2\n\nPair-wise\n\n\n\nConfusion Matrix\n Evaluation of confusion matrix\nBased on the confusion matrix, we can see that Natural vegetation, Built-up 2 and Bare land are having difficulty differentiating, whereas Impervious surfaces, Water body and Inland water are able to differentiate amongst the pixels well.\nConfusion Matrix \n\n\nKappa Hat/Overall"
   }
 ]

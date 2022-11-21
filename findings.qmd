@@ -27,4 +27,10 @@ Both satellite imagery has their own benefits, with Sentinel-2 being clearer due
 
 ## Literature Review
 
-Our team has conducted several literatures reviews and found that out Sentinel-2A data has similar spectral bands and geometric accuracy to Landsat 8. (EROS, 2019) Readings also suggest that when the red-edge bands in both datasets are being compared, a combination of both Landsat-8 and Sentinel-2 red-edge bands resulted in a higher accuracy index than Landsat-8 alone. (Gerald Forkuor et al, 2018) Therefore, we wanted to use the comparison study as an opportunity to explore the data insights that both datasets could be used to uncover.
+Our team has conducted several literatures reviews and found that out Sentinel-2A data has similar spectral bands and geometric accuracy to Landsat 8. (EROS, 2019) [^1] Readings also suggest that when the red-edge bands in both datasets are being compared, a combination of both Landsat-8 and Sentinel-2 red-edge bands resulted in a higher accuracy index than Landsat-8 alone. (Gerald Forkuor et al, 2018)[^2] 
+
+[^1]: USGS EROS Archive - Sentinel-2 - Comparison of Sentinel-2 and Landsat | U.S. Geological Survey. (2019, March 1). USGS.gov. From https://www.usgs.gov/centers/eros/science/usgs-eros-archive-sentinel-2-comparison-sentinel-2-and-landsat
+
+[^2]: Gerald Forkuor, Kangbeni Dimobe, Idriss Serme & Jerome Ebagnerin Tondoh (2018) Landsat-8 vs. Sentinel-2: examining the added value of sentinel-2’s red-edge bands to land-use and land-cover mapping in Burkina Faso, GIScience & Remote Sensing, 55:3, 331-354, DOI: 10.1080/15481603.2017.1370169
+
+Therefore, we wanted to use the comparison study as an opportunity to explore the data insights that both datasets could be used to uncover.

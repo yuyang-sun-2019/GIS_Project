@@ -8,10 +8,14 @@ We are a team of 3 girls, consisting of:
 
 ![](images/team_photo.jpg)
 
+Townhall Presentation
+
+![](images/team_photo_2.jpg){fig-align="center" width="375"}
+
 ------------------------------------------------------------------------
 
-| Authors         | Afiliations                                                                                             | Email Address                     |
-|---------------------|--------------------------|--------------------------|
+| Authors         | Affiliations                                                                                            | Email Address                     |
+|-----------------|---------------------------------------------------------------------------------------------------------|-----------------------------------|
 | Ranullo Avigale | [School of Computer and Information Systems, Singapore Management University](https://scis.smu.edu.sg/) | rabalisacan.2019\@scis.smu.edu.sg |
 | Goh Jia Yiing   | [School of Computer and Information Systems, Singapore Management University](https://scis.smu.edu.sg/) | jygoh.2019\@scis.smu.edu.sg       |
 | Sun Yuyang      | [School of Computer and Information Systems, Singapore Management University](https://scis.smu.edu.sg/) | yuyang.sun.2019\@scis.smu.edu.sg  |
